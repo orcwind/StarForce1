@@ -1,0 +1,5 @@
+﻿#,马达表,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,Id,,Owner,Description,Name,DurationTime,AtkInterval,AtkDamage,atkRatio,coolTime,coolRemain,costSP,attackDistance,attackWidth,attackTargets,level,prefabName,skillPrefab,selectorType,attackType,Activated,animtionName,attackAngle,hitFxName,hitFxPrefab,nextBatterId,knockBackDistance,knockBackSpeed
+#,int,,Gameobject,string,string,float,float,float,float,float,float,float,float,float,,,,,SelectorMode,SkillAttackType,,,,,,,,
+#,技能编号,策划备注,技能拥有者,技能描述,技能名称,持续时间,攻击间隔,伤害,攻击比率,冷却时间,冷却剩余,魔法消耗,攻击距离,攻击范围（上下距离）,攻击目标的TAG,技能等级,预制文件名,预制文件,攻击范围,攻击类型，单攻，群攻,是否激活,技能对应的动画名称,攻击范围角度,目标受击特效名称,目标受击特效预制件,下一个连击技能编号,击退距离,击退移动速度
+,50011,技能1a,,NormalAttack,0,0.5,3,2.5,0.2,1,0.5,0.3,3,0.4,,,,,,,,,,,,,,

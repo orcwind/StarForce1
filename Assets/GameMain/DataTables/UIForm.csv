@@ -1,0 +1,14 @@
+#,UIForm.csv,,,,,
+#,Id,,AssetName,UIGroupName,AllowMultiInstance,PauseCoveredUIForm
+#,int,,string,string,bool,bool
+#,界面编号,策划备注,资源名称,界面组名称,是否允许多个界面实例,是否暂停被其覆盖的界面
+,1,开始界面,UIStartMenu,Default,FALSE,FALSE
+,2,设置界面,UISettingForm,Default,FALSE,FALSE
+,3,背包界面,UIInventory,Default,FALSE,TRUE
+,4,装备栏界面,UIEquipmentSlot,Default,FALSE,TRUE
+,5,角色参数界面,UICharacterDetailStatus,Default,FALSE,TRUE
+,6,游戏结束界面,UIGameOver,Default,FALSE,TRUE
+,7,关于界面,UIAboutForm,Default,FALSE,TRUE
+,8,对话界面,UIDialogForm,Default,FALSE,TRUE
+,9,交互界面,UIInteractionPrompt,Default,FALSE,FALSE
+,10,道具信息,UIItemInfo,Default,FALSE,FALSE

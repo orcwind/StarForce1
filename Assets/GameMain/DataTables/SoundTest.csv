@@ -1,0 +1,6 @@
+﻿#,角色状态表,,
+#,Id,,AssetName
+#,int,,string
+#,角色编号,策划备注,资源名称
+,1001,player,player
+,2001,enemy,enemy01

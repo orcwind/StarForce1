@@ -1,0 +1,5 @@
+﻿#,马达表,,,,,,,,,,,,,,
+#,Id,,MoveSpeed,JumpHeight,Aspeed,Velocity_Y,RateY,RollSPeed,RollDIstance,AtkMoveSpeed,DefaultJumpCount,ChargingSpeedRate,CancelAttackTime,BatterAttackTime,ProjectileHeight
+#,int,,float,float,float,float,float,float,float,float,float,float,float,float,float
+#,角色编号,策划备注,移动速度,跳跃高度,重力加速度,Y方向加速度,Y方向移动速率,翻滚速度,翻滚距离,攻击时位移距离,默认跳跃次数,充能速率,取消攻击指令间隔,连击间隔,投射物初始高度修正（离人物足部距离）
+,1001,玩家,3,0.7,-15,0,0.5,3,2.5,0.2,1,0.5,0.3,3,0.4

@@ -1,0 +1,2297 @@
+fileFormatVersion: 2
+guid: 26259a6e952807b4794b222db3b7b55f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2169b160937bbaf42be09a37108f883a
+      internalID: -898605760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c5bc9a0274e914f9371354551dea85
+      internalID: -1163255224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4277017600f8e8342a9b7a9910cb5350
+      internalID: -632309201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808d8c8391b7c0a4187fdea4a171a5ca
+      internalID: 151249814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423db7c0dc79b094a8971d34bfd55ff0
+      internalID: -780838536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37462f692363b8f47b0f9aadd3cb8e51
+      internalID: -2066968029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a91c2d1cc3c2584d94fa20f0be2936a
+      internalID: 258017902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75986ecffd3fe1745997064198a6abfa
+      internalID: -2074480012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b87e6deeead2954a8a2117b5781fba9
+      internalID: 1354879015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828c212e339d0f6409b5fe0b7d7ff8eb
+      internalID: -1497811852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7f9c36b5971f842959f00024fabfdc
+      internalID: -1727843804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fac6a4244cb674f924c9deaad2d501
+      internalID: 492393090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326b06803cb79c948bd73652d8daec2c
+      internalID: 373453073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568f28f05ccb9e84b859244b6694682b
+      internalID: 804281845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994a2de2f3f4c664e9aeee9cc6d726f0
+      internalID: -1309592880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_15
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68577238edd013049adc79f297c700b7
+      internalID: -506008612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00f36bc571864b41a31da8d25505343
+      internalID: 180172124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b181db00810a7d342837119e686e8fe2
+      internalID: 859805251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec9069cb7ea4784a881f89b50055071
+      internalID: 506530714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78098f50ffad5ff44bf2c40666b96e0b
+      internalID: -1975329274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccec0c56de723844b8eeae6396d22d55
+      internalID: -1414378729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343fa48d00ec6bf4ebb624cad95f21fb
+      internalID: -332934436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ab4cbcb9371f545a5650e333e3dd5c
+      internalID: 899135177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_23
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0716e91d12c9b489b0ca8527231abc
+      internalID: 334745478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db920b5a585f1043abbedeca461e084
+      internalID: 677866407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdf953647b46dc4d829ffd84740483b
+      internalID: 1439520785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c50fecef40b15409797901f20d7d33
+      internalID: 1542475950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_27
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4317819760459af4cbc4e59ed1bbe352
+      internalID: 2000457939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1ab49c032d8ba488eeca1566457132
+      internalID: -1666352057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_29
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4761b6d2f60ee4c9626b466ddec16b
+      internalID: 928842867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8f165c5019799468ff50f4ec8b07ce
+      internalID: 1390625286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de69e188bddd11c4a8b64664f683352a
+      internalID: -617401265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a9a2f201f179e46bb4dbb41a6cd4b6
+      internalID: -764758690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9217393d48bcbd43a9ad0b1e1a8cfee
+      internalID: 649726149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0256807c1f29a0f498ae2b992cd90683
+      internalID: 165058502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b2bce27c9d94440ba3ee3fc867cfbf
+      internalID: -559815794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036abf019b115df40bd43261bb6cada4
+      internalID: 274354810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_37
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428a82f34c7d45a4cba483cff7905246
+      internalID: 1212923907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_38
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b99ca6abac1cdd4fbd5a7be2d26531f
+      internalID: -15291750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_39
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf077f4613e0db941a180db6deac1ddd
+      internalID: -1088455098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc45bad142ae6464a968116851f6330d
+      internalID: -1293674780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee3ca2ceb3af5e4ab2f28b031b45612
+      internalID: 316708674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08d0764c6b211c4caa09fe7dcb59229
+      internalID: -74941663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985a430a17e791541a420860d1f2ca98
+      internalID: 755075852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448394604bf04504b8a1e90f92570a00
+      internalID: -123453338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97671db92df74ed4dbad1b06faa4b9a1
+      internalID: -1282476783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1696b26ce7fb884aa656e9e513fdcef
+      internalID: -915521481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f007690782e83844a1342f3a2506ca4
+      internalID: -1385127566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_48
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b40240ecc0a11c489aafe613262184e
+      internalID: -596286268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_49
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540a02ba41028ea4aab83a1ea509c7a9
+      internalID: 805232421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176f8c1ba5a19ae4a98a02648444e24f
+      internalID: 345033061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ff67c621952c0499eea22dba4765e7
+      internalID: 1513860279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fa1d70161fd00459e22df1ddc2cdcb
+      internalID: -2135620351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_53
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f222fad12022d44d882ffc3e69f244d
+      internalID: -2099081432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_54
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0067771feda27240aa2934d76348f28
+      internalID: 1570681255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_55
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64bf51530b20b446839b60151a4fded
+      internalID: -1829565445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accdd95e402619c4b935f56f0c372f6f
+      internalID: 1252480849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_57
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c7669ccc2496f4481c43ec9063680a
+      internalID: -401017800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_58
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb016011efd729b43a19b7c702cbd55f
+      internalID: -1937334849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_59
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47e6ef4bb1df484f923664465152eae
+      internalID: -591209564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0a1c2aa3dfca443b5e29e24ec2189b
+      internalID: 1990898018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_61
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d74b29e0d0ed34cb25f51da92c68b4
+      internalID: -360636451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbb56d2dd2a8624098f37facee7341d
+      internalID: -956382684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_63
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc3c0d11c52c9e47ae5eea51338d7d0
+      internalID: -578485895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_64
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952b8e79f7343c441b24027a8996aacb
+      internalID: 1490568383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_65
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2ced0bad6a4a04fbc5ef3fe448df42
+      internalID: -1604332283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66fb5fa07b9ced4289693a7bcad6ebb
+      internalID: -1590652595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_67
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a8a80abc0401540af3ba687af3182a
+      internalID: 108003229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_68
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c5f72663c90a040bb940e0ca77d4db
+      internalID: 1995028831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_69
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef8965e6b00d674485cd997d99dcc0b
+      internalID: -1709778231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e180bee197ff3c4694166042fe56b36
+      internalID: 395420384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_71
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dd76bd553cff24ebbe5e84772f9bf1
+      internalID: -640420821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_72
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaafd8fc593280a46a92bd824689d0d9
+      internalID: -945287511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_73
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17483f0e797136843af9546ed4eacce7
+      internalID: 184110016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc66834849af1a41bbdbb402f382356
+      internalID: -279410923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_75
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75baa8050b7fad749877a0beb2527c5e
+      internalID: 2106727861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_76
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf3a2a617c0f9940a72c43e9587b15e
+      internalID: -1439084058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_77
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71d840917cf6e249abb4e57ae36267a
+      internalID: 243653018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_78
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad463fd5c47d928418ef9883079f640c
+      internalID: 1408657259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_79
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f56139f1d4e14c40a2395824989655a
+      internalID: -1205190779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e582e31d96462d4484f5acd58f2c8d9
+      internalID: 2079536953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_81
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d574c0964a02bb94ebccd7d79e6a6677
+      internalID: 551849074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_82
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d365a0c4f4fc1f449f4ba79fd09068c
+      internalID: 1099611979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_83
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e82e7c735191443b41be7259a33170
+      internalID: -262977603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_84
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703a57f970a4cb847bbf2a3aad8d16b8
+      internalID: -1017730171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_85
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4d3f74f3b07c949bf890928b7480b1
+      internalID: 1957956334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_86
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3180b49631deb0144bb72ef91dd6fc93
+      internalID: 2037177841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_87
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622aca66d876a164e8d72d83d56ab168
+      internalID: 843165864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_88
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a563b61f1bfa1e4aaf687938c90c00a
+      internalID: -1161101342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_89
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6adce9e9219374cbc6a8c802f687bc
+      internalID: -1094591373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5062845, y: 0.00000009490495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057728d1d3d3b9f4ea191dfe6f714977
+      internalID: 276723399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_91
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5221403, y: 0.0012483536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51474b18f970a6947bcd39a24a7fe065
+      internalID: -717019078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_92
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 55
+      alignment: 9
+      pivot: {x: 0.54419386, y: 0.0014879667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a174b21390c3f47bc1cb599898f7d0
+      internalID: -1169426408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_93
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82064f91023bcc14196bfe0a9e612bfa
+      internalID: -331700363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_94
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 105
+        height: 55
+      alignment: 9
+      pivot: {x: 0.4506839, y: -0.0070612654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1fd239469bcfd4f8910f436093988c
+      internalID: -1847415689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_95
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 0
+        width: 110
+        height: 55
+      alignment: 9
+      pivot: {x: 0.36939394, y: -0.0015804204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb60bfb6d3bef394885e9b1d7e72b89b
+      internalID: -1671681051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_96
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 0
+        width: 106
+        height: 55
+      alignment: 9
+      pivot: {x: 0.36883315, y: -0.005210022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a404f864c6b19f1419adb01d729f903c
+      internalID: 611232973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnight - attackCharge_97
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 0
+        width: 97
+        height: 55
+      alignment: 9
+      pivot: {x: 0.39676, y: 0.0005014777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c431614b64e9f4891f14ca2f1951b8
+      internalID: -1066506577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HeroKnight - attackCharge_0: -898605760
+      HeroKnight - attackCharge_1: -1163255224
+      HeroKnight - attackCharge_10: -1727843804
+      HeroKnight - attackCharge_11: 492393090
+      HeroKnight - attackCharge_12: 373453073
+      HeroKnight - attackCharge_13: 804281845
+      HeroKnight - attackCharge_14: -1309592880
+      HeroKnight - attackCharge_15: -506008612
+      HeroKnight - attackCharge_16: 180172124
+      HeroKnight - attackCharge_17: 859805251
+      HeroKnight - attackCharge_18: 506530714
+      HeroKnight - attackCharge_19: -1975329274
+      HeroKnight - attackCharge_2: -632309201
+      HeroKnight - attackCharge_20: -1414378729
+      HeroKnight - attackCharge_21: -332934436
+      HeroKnight - attackCharge_22: 899135177
+      HeroKnight - attackCharge_23: 334745478
+      HeroKnight - attackCharge_24: 677866407
+      HeroKnight - attackCharge_25: 1439520785
+      HeroKnight - attackCharge_26: 1542475950
+      HeroKnight - attackCharge_27: 2000457939
+      HeroKnight - attackCharge_28: -1666352057
+      HeroKnight - attackCharge_29: 928842867
+      HeroKnight - attackCharge_3: 151249814
+      HeroKnight - attackCharge_30: 1390625286
+      HeroKnight - attackCharge_31: -617401265
+      HeroKnight - attackCharge_32: -764758690
+      HeroKnight - attackCharge_33: 649726149
+      HeroKnight - attackCharge_34: 165058502
+      HeroKnight - attackCharge_35: -559815794
+      HeroKnight - attackCharge_36: 274354810
+      HeroKnight - attackCharge_37: 1212923907
+      HeroKnight - attackCharge_38: -15291750
+      HeroKnight - attackCharge_39: -1088455098
+      HeroKnight - attackCharge_4: -780838536
+      HeroKnight - attackCharge_40: -1293674780
+      HeroKnight - attackCharge_41: 316708674
+      HeroKnight - attackCharge_42: -74941663
+      HeroKnight - attackCharge_43: 755075852
+      HeroKnight - attackCharge_44: -123453338
+      HeroKnight - attackCharge_45: -1282476783
+      HeroKnight - attackCharge_46: -915521481
+      HeroKnight - attackCharge_47: -1385127566
+      HeroKnight - attackCharge_48: -596286268
+      HeroKnight - attackCharge_49: 805232421
+      HeroKnight - attackCharge_5: -2066968029
+      HeroKnight - attackCharge_50: 345033061
+      HeroKnight - attackCharge_51: 1513860279
+      HeroKnight - attackCharge_52: -2135620351
+      HeroKnight - attackCharge_53: -2099081432
+      HeroKnight - attackCharge_54: 1570681255
+      HeroKnight - attackCharge_55: -1829565445
+      HeroKnight - attackCharge_56: 1252480849
+      HeroKnight - attackCharge_57: -401017800
+      HeroKnight - attackCharge_58: -1937334849
+      HeroKnight - attackCharge_59: -591209564
+      HeroKnight - attackCharge_6: 258017902
+      HeroKnight - attackCharge_60: 1990898018
+      HeroKnight - attackCharge_61: -360636451
+      HeroKnight - attackCharge_62: -956382684
+      HeroKnight - attackCharge_63: -578485895
+      HeroKnight - attackCharge_64: 1490568383
+      HeroKnight - attackCharge_65: -1604332283
+      HeroKnight - attackCharge_66: -1590652595
+      HeroKnight - attackCharge_67: 108003229
+      HeroKnight - attackCharge_68: 1995028831
+      HeroKnight - attackCharge_69: -1709778231
+      HeroKnight - attackCharge_7: -2074480012
+      HeroKnight - attackCharge_70: 395420384
+      HeroKnight - attackCharge_71: -640420821
+      HeroKnight - attackCharge_72: -945287511
+      HeroKnight - attackCharge_73: 184110016
+      HeroKnight - attackCharge_74: -279410923
+      HeroKnight - attackCharge_75: 2106727861
+      HeroKnight - attackCharge_76: -1439084058
+      HeroKnight - attackCharge_77: 243653018
+      HeroKnight - attackCharge_78: 1408657259
+      HeroKnight - attackCharge_79: -1205190779
+      HeroKnight - attackCharge_8: 1354879015
+      HeroKnight - attackCharge_80: 2079536953
+      HeroKnight - attackCharge_81: 551849074
+      HeroKnight - attackCharge_82: 1099611979
+      HeroKnight - attackCharge_83: -262977603
+      HeroKnight - attackCharge_84: -1017730171
+      HeroKnight - attackCharge_85: 1957956334
+      HeroKnight - attackCharge_86: 2037177841
+      HeroKnight - attackCharge_87: 843165864
+      HeroKnight - attackCharge_88: -1161101342
+      HeroKnight - attackCharge_89: -1094591373
+      HeroKnight - attackCharge_9: -1497811852
+      HeroKnight - attackCharge_90: 276723399
+      HeroKnight - attackCharge_91: -717019078
+      HeroKnight - attackCharge_92: -1169426408
+      HeroKnight - attackCharge_93: -331700363
+      HeroKnight - attackCharge_94: -1847415689
+      HeroKnight - attackCharge_95: -1671681051
+      HeroKnight - attackCharge_96: 611232973
+      HeroKnight - attackCharge_97: -1066506577
+      HeroKnight - attackCharge_98: 1103166981
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

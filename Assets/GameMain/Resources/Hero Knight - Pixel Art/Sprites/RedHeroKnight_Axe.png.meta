@@ -1,0 +1,2749 @@
+fileFormatVersion: 2
+guid: ef7a2d631c8bf0942af29162dc92fcd5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9053982045404296308
+    second: RedHeroKnight_Axe_0
+  - first:
+      213: -5336810034016217890
+    second: RedHeroKnight_Axe_1
+  - first:
+      213: 8708122468543298987
+    second: RedHeroKnight_Axe_2
+  - first:
+      213: 8942552030347358505
+    second: RedHeroKnight_Axe_3
+  - first:
+      213: 5273472296098019317
+    second: RedHeroKnight_Axe_4
+  - first:
+      213: 4582571530687549467
+    second: RedHeroKnight_Axe_5
+  - first:
+      213: -533260203589572985
+    second: RedHeroKnight_Axe_6
+  - first:
+      213: -412645869483822502
+    second: RedHeroKnight_Axe_7
+  - first:
+      213: 3498536972942749304
+    second: RedHeroKnight_Axe_8
+  - first:
+      213: -4052281458885342990
+    second: RedHeroKnight_Axe_9
+  - first:
+      213: -6527264671789208437
+    second: RedHeroKnight_Axe_10
+  - first:
+      213: -7246436346742177934
+    second: RedHeroKnight_Axe_11
+  - first:
+      213: 59605022844119292
+    second: RedHeroKnight_Axe_12
+  - first:
+      213: -8888054440931206110
+    second: RedHeroKnight_Axe_13
+  - first:
+      213: -2774386062087139822
+    second: RedHeroKnight_Axe_14
+  - first:
+      213: -2237312633088221442
+    second: RedHeroKnight_Axe_15
+  - first:
+      213: -7923669330896320887
+    second: RedHeroKnight_Axe_16
+  - first:
+      213: -7071415030138395994
+    second: RedHeroKnight_Axe_17
+  - first:
+      213: -1225033180908482247
+    second: RedHeroKnight_Axe_18
+  - first:
+      213: 6806082606905647634
+    second: RedHeroKnight_Axe_19
+  - first:
+      213: -3478578060470176310
+    second: RedHeroKnight_Axe_20
+  - first:
+      213: 2393452042578434646
+    second: RedHeroKnight_Axe_21
+  - first:
+      213: 7052051904817001566
+    second: RedHeroKnight_Axe_22
+  - first:
+      213: 6871398778734266455
+    second: RedHeroKnight_Axe_23
+  - first:
+      213: -1493517987544525719
+    second: RedHeroKnight_Axe_24
+  - first:
+      213: 4815968949648043228
+    second: RedHeroKnight_Axe_25
+  - first:
+      213: 4688549862583671447
+    second: RedHeroKnight_Axe_26
+  - first:
+      213: 5554577754364798786
+    second: RedHeroKnight_Axe_27
+  - first:
+      213: -1805068466060701519
+    second: RedHeroKnight_Axe_28
+  - first:
+      213: -559974450388891500
+    second: RedHeroKnight_Axe_29
+  - first:
+      213: 2231822552199421580
+    second: RedHeroKnight_Axe_30
+  - first:
+      213: -8257567169365872951
+    second: RedHeroKnight_Axe_31
+  - first:
+      213: -8690198510633873564
+    second: RedHeroKnight_Axe_32
+  - first:
+      213: -9105202188120984835
+    second: RedHeroKnight_Axe_33
+  - first:
+      213: 8839700546170962239
+    second: RedHeroKnight_Axe_34
+  - first:
+      213: -3032787948115691798
+    second: RedHeroKnight_Axe_35
+  - first:
+      213: 5586074853609996613
+    second: RedHeroKnight_Axe_36
+  - first:
+      213: 1202908324622297543
+    second: RedHeroKnight_Axe_37
+  - first:
+      213: -4558906908707581349
+    second: RedHeroKnight_Axe_38
+  - first:
+      213: -258933951639970170
+    second: RedHeroKnight_Axe_39
+  - first:
+      213: 7879503676637335498
+    second: RedHeroKnight_Axe_40
+  - first:
+      213: 5341440792636959054
+    second: RedHeroKnight_Axe_41
+  - first:
+      213: 1982829634101306635
+    second: RedHeroKnight_Axe_42
+  - first:
+      213: 451839918948495746
+    second: RedHeroKnight_Axe_43
+  - first:
+      213: 6722333021314547478
+    second: RedHeroKnight_Axe_44
+  - first:
+      213: 5349320928008339606
+    second: RedHeroKnight_Axe_45
+  - first:
+      213: 431918146498483729
+    second: RedHeroKnight_Axe_46
+  - first:
+      213: -1699922829890819698
+    second: RedHeroKnight_Axe_47
+  - first:
+      213: 8287395653099569833
+    second: RedHeroKnight_Axe_48
+  - first:
+      213: 6096868749577759670
+    second: RedHeroKnight_Axe_49
+  - first:
+      213: 5622609701337634236
+    second: RedHeroKnight_Axe_50
+  - first:
+      213: -9201121673067845102
+    second: RedHeroKnight_Axe_51
+  - first:
+      213: 8022501886998329554
+    second: RedHeroKnight_Axe_52
+  - first:
+      213: 377037411324649559
+    second: RedHeroKnight_Axe_53
+  - first:
+      213: -8598209445591246600
+    second: RedHeroKnight_Axe_54
+  - first:
+      213: 3052428676364255639
+    second: RedHeroKnight_Axe_55
+  - first:
+      213: 3635665667253207275
+    second: RedHeroKnight_Axe_56
+  - first:
+      213: 424028016193938874
+    second: RedHeroKnight_Axe_57
+  - first:
+      213: 3992438808721711171
+    second: RedHeroKnight_Axe_58
+  - first:
+      213: 798554256205057883
+    second: RedHeroKnight_Axe_59
+  - first:
+      213: -9165870628875811986
+    second: RedHeroKnight_Axe_60
+  - first:
+      213: -5747684509890401300
+    second: RedHeroKnight_Axe_61
+  - first:
+      213: -3061169114411290125
+    second: RedHeroKnight_Axe_62
+  - first:
+      213: -6504669390140167441
+    second: RedHeroKnight_Axe_63
+  - first:
+      213: 5247186981318025860
+    second: RedHeroKnight_Axe_64
+  - first:
+      213: 6793070376780903076
+    second: RedHeroKnight_Axe_65
+  - first:
+      213: 6504569106975518503
+    second: RedHeroKnight_Axe_66
+  - first:
+      213: 8771528701657198784
+    second: RedHeroKnight_Axe_67
+  - first:
+      213: -8136503736444294212
+    second: RedHeroKnight_Axe_68
+  - first:
+      213: -5932793741351056728
+    second: RedHeroKnight_Axe_69
+  - first:
+      213: 4664118121764740364
+    second: RedHeroKnight_Axe_70
+  - first:
+      213: 198393950833440179
+    second: RedHeroKnight_Axe_71
+  - first:
+      213: 7068352067623350106
+    second: RedHeroKnight_Axe_72
+  - first:
+      213: 4155544587734037836
+    second: RedHeroKnight_Axe_73
+  - first:
+      213: 583115598697580767
+    second: RedHeroKnight_Axe_74
+  - first:
+      213: 9006828856694046943
+    second: RedHeroKnight_Axe_75
+  - first:
+      213: -3805308395222602779
+    second: RedHeroKnight_Axe_76
+  - first:
+      213: -3620969868580993475
+    second: RedHeroKnight_Axe_77
+  - first:
+      213: 7053563838146815519
+    second: RedHeroKnight_Axe_78
+  - first:
+      213: 6965037277102914266
+    second: RedHeroKnight_Axe_79
+  - first:
+      213: -3457435525572320014
+    second: RedHeroKnight_Axe_80
+  - first:
+      213: -6489179402238863168
+    second: RedHeroKnight_Axe_81
+  - first:
+      213: -9193310198955095166
+    second: RedHeroKnight_Axe_82
+  - first:
+      213: -4270366565497621814
+    second: RedHeroKnight_Axe_83
+  - first:
+      213: -6289686400415245921
+    second: RedHeroKnight_Axe_84
+  - first:
+      213: 5971141546251967251
+    second: RedHeroKnight_Axe_85
+  - first:
+      213: 6390378705120393126
+    second: RedHeroKnight_Axe_86
+  - first:
+      213: -5965322876354610265
+    second: RedHeroKnight_Axe_87
+  - first:
+      213: 5263232146936764826
+    second: RedHeroKnight_Axe_88
+  - first:
+      213: -5290900669501229588
+    second: RedHeroKnight_Axe_89
+  - first:
+      213: 4834133387724559123
+    second: RedHeroKnight_Axe_90
+  - first:
+      213: -3997092960550811646
+    second: RedHeroKnight_Axe_91
+  - first:
+      213: 7853521541714517565
+    second: RedHeroKnight_Axe_92
+  - first:
+      213: -6030545088298129314
+    second: RedHeroKnight_Axe_93
+  - first:
+      213: -7540862898077394709
+    second: RedHeroKnight_Axe_94
+  - first:
+      213: 7125580046995974008
+    second: RedHeroKnight_Axe_95
+  - first:
+      213: -2262397509330638533
+    second: RedHeroKnight_Axe_96
+  - first:
+      213: -1406863795777635363
+    second: RedHeroKnight_Axe_97
+  - first:
+      213: 5665250517384590419
+    second: RedHeroKnight_Axe_98
+  - first:
+      213: -5203174052329379580
+    second: RedHeroKnight_Axe_99
+  - first:
+      213: 6499196659029501268
+    second: RedHeroKnight_Axe_100
+  - first:
+      213: -6856040911792736519
+    second: RedHeroKnight_Axe_101
+  - first:
+      213: 136683043235390855
+    second: RedHeroKnight_Axe_102
+  - first:
+      213: 2210462914803138451
+    second: RedHeroKnight_Axe_103
+  - first:
+      213: -1253041187951408709
+    second: RedHeroKnight_Axe_104
+  - first:
+      213: 1425442501007831755
+    second: RedHeroKnight_Axe_105
+  - first:
+      213: 5280521961595800287
+    second: RedHeroKnight_Axe_106
+  - first:
+      213: 1849085270938375965
+    second: RedHeroKnight_Axe_107
+  - first:
+      213: -7557058070112009905
+    second: RedHeroKnight_Axe_108
+  - first:
+      213: -5667491114480874193
+    second: RedHeroKnight_Axe_109
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b89ecbc4bc95280800000000000000
+      internalID: -9053982045404296308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed419b8bc87dfe5b0800000000000000
+      internalID: -5336810034016217890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badfe1e5f3779d870800000000000000
+      internalID: 8708122468543298987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9217d4221b35a1c70800000000000000
+      internalID: 8942552030347358505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f739cdfc132f2940800000000000000
+      internalID: 5273472296098019317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1013741780989f30800000000000000
+      internalID: 4582571530687549467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786e0309baa7998f0800000000000000
+      internalID: -533260203589572985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52726b94ccf54af0800000000000000
+      internalID: -412645869483822502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ea2d147dc4d8030800000000000000
+      internalID: 3498536972942749304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 550
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8cc39ab7763c7c0800000000000000
+      internalID: -4052281458885342990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c2c0b2d5f7a65a0800000000000000
+      internalID: -6527264671789208437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ff3f0398c7f6b90800000000000000
+      internalID: -7246436346742177934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8e375d372c3d000800000000000000
+      internalID: 59605022844119292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c56ffa39947a480800000000000000
+      internalID: -8888054440931206110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e408b63966f79d0800000000000000
+      internalID: -2774386062087139822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_15
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe5845930873f0e0800000000000000
+      internalID: -2237312633088221442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986844699b8790290800000000000000
+      internalID: -7923669330896320887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a22e3dfe794ddd90800000000000000
+      internalID: -7071415030138395994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93112edffcecffee0800000000000000
+      internalID: -1225033180908482247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21263902210147e50800000000000000
+      internalID: 6806082606905647634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5353e2fab99bfc0800000000000000
+      internalID: -3478578060470176310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a12d0a3ff373120800000000000000
+      internalID: 2393452042578434646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54fb3418dbedd160800000000000000
+      internalID: 7052051904817001566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_23
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758428478cc1c5f50800000000000000
+      internalID: 6871398778734266455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96490c6ad45f54be0800000000000000
+      internalID: -1493517987544525719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc251d5e32c5d240800000000000000
+      internalID: 4815968949648043228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a910f4243111140800000000000000
+      internalID: 4688549862583671447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_27
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2476336c903d51d40800000000000000
+      internalID: 5554577754364798786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b051353bcb13f6e0800000000000000
+      internalID: -1805068466060701519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_29
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498864944329a38f0800000000000000
+      internalID: -559974450388891500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e5d8959c609fe10800000000000000
+      internalID: 2231822552199421580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cee401f86a376d80800000000000000
+      internalID: -8257567169365872951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f0a0a4f76366780800000000000000
+      internalID: -8690198510633873564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df270f0f9d2d3a180800000000000000
+      internalID: -9105202188120984835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31c85fdfccecaa70800000000000000
+      internalID: 8839700546170962239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae67a79fd6f59e5d0800000000000000
+      internalID: -3032787948115691798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5418a2aab79b58d40800000000000000
+      internalID: 5586074853609996613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_37
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9e87a7fb691b010800000000000000
+      internalID: 1202908324622297543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_38
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52196612528bb0c0800000000000000
+      internalID: -4558906908707581349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_39
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e163061f4186cf0800000000000000
+      internalID: -258933951639970170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf4a54b8de995d60800000000000000
+      internalID: 7879503676637335498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4928e9c91c902a40800000000000000
+      internalID: 5341440792636959054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05e9b6fb0d648b10800000000000000
+      internalID: 1982829634101306635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28134482302454600800000000000000
+      internalID: 451839918948495746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ff45534468a4d50800000000000000
+      internalID: 6722333021314547478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6900087ca0b9c3a40800000000000000
+      internalID: 5349320928008339606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116561e044b7ef500800000000000000
+      internalID: 431918146498483729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89e7ca5139a868e0800000000000000
+      internalID: -1699922829890819698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_48
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2cd10207eb20370800000000000000
+      internalID: 8287395653099569833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_49
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb23cc33dd6c9450800000000000000
+      internalID: 6096868749577759670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb515e6cbb5870e40800000000000000
+      internalID: 5622609701337634236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21aa4a5869c0f4080800000000000000
+      internalID: -9201121673067845102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8bf6016f6a55f60800000000000000
+      internalID: 8022501886998329554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_53
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750e90927818b3500800000000000000
+      internalID: 377037411324649559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_54
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8102380160da880800000000000000
+      internalID: -8598209445591246600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_55
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79148ec65b76c5a20800000000000000
+      internalID: 3052428676364255639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be006ba69aa747230800000000000000
+      internalID: 3635665667253207275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_57
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5ad00fb3372e500800000000000000
+      internalID: 424028016193938874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_58
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340675591fdf76730800000000000000
+      internalID: 3992438808721711171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_59
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f8af67dd8051b00800000000000000
+      internalID: 798554256205057883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63cba4d9394cc080800000000000000
+      internalID: -9165870628875811986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_61
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceba7fa046f1c30b0800000000000000
+      internalID: -5747684509890401300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f13e12c8ea8485d0800000000000000
+      internalID: -3061169114411290125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_63
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feaa65327a5cab5a0800000000000000
+      internalID: -6504669390140167441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_64
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482e38b32c0c1d840800000000000000
+      internalID: 5247186981318025860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_65
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a231463485d54e50800000000000000
+      internalID: 6793070376780903076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f614ed32fd44a50800000000000000
+      internalID: 6504569106975518503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_67
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0bb6f61eabab970800000000000000
+      internalID: 8771528701657198784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_68
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb6993f5f4551f80800000000000000
+      internalID: -8136503736444294212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_69
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa0c19868b7aada0800000000000000
+      internalID: -5932793741351056728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ddf3e58b64ab040800000000000000
+      internalID: 4664118121764740364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_71
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b573054f36d0c200800000000000000
+      internalID: 198393950833440179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_72
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f661a71c4d71260800000000000000
+      internalID: 7068352067623350106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_73
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c453f2819c57ba930800000000000000
+      internalID: 4155544587734037836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8cb5b2c84a71800800000000000000
+      internalID: 583115598697580767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_75
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd08cfbff1faefc70800000000000000
+      internalID: 9006828856694046943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_76
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebe1f90d24d03bc0800000000000000
+      internalID: -3805308395222602779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_77
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3646d8d61bbfbdc0800000000000000
+      internalID: -3620969868580993475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_78
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16284d70fa43e160800000000000000
+      internalID: 7053563838146815519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_79
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adab21d4088c8a060800000000000000
+      internalID: 6965037277102914266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4227035b8b400d0800000000000000
+      internalID: -3457435525572320014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_81
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c855cdf6bdc1f5a0800000000000000
+      internalID: -6489179402238863168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_82
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b4e41151dca6080800000000000000
+      internalID: -9193310198955095166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_83
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac23fcaeb3c9cb4c0800000000000000
+      internalID: -4270366565497621814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_84
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99d4a20b8b86b8a0800000000000000
+      internalID: -6289686400415245921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_85
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bdcef8991cdd250800000000000000
+      internalID: 5971141546251967251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_86
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7fbea139f2fa850800000000000000
+      internalID: 6390378705120393126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_87
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab3f58137ae63da0800000000000000
+      internalID: -5965322876354610265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_88
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99159870c1ca0940800000000000000
+      internalID: 5263232146936764826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_89
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5b08c9fd1f296b0800000000000000
+      internalID: -5290900669501229588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3139d2c24ba461340800000000000000
+      internalID: 4834133387724559123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_91
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208872041297788c0800000000000000
+      internalID: -3997092960550811646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_92
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e95c18b305dfc60800000000000000
+      internalID: 7853521541714517565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_93
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58630281333f4ca0800000000000000
+      internalID: -6030545088298129314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_94
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be89c2cb529795790800000000000000
+      internalID: -7540862898077394709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_95
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8776ecfbc4523e260800000000000000
+      internalID: 7125580046995974008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_96
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b396e93b3795a90e0800000000000000
+      internalID: -2262397509330638533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_97
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbf055e4d0d97ce0800000000000000
+      internalID: -1406863795777635363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_98
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3547e4c64530f9e40800000000000000
+      internalID: 5665250517384590419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_99
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409a06a54cc9ac7b0800000000000000
+      internalID: -5203174052329379580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455ebda5de8c13a50800000000000000
+      internalID: 6499196659029501268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_101
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f67c079d137ad0a0800000000000000
+      internalID: -6856040911792736519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_102
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7856ddee08895e100800000000000000
+      internalID: 136683043235390855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_103
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ff30a3f442dae10800000000000000
+      internalID: 2210462914803138451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_104
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9093fadad4c9ee0800000000000000
+      internalID: -1253041187951408709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_105
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2f050076038c310800000000000000
+      internalID: 1425442501007831755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_106
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda01952fbe284940800000000000000
+      internalID: 5280521961595800287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_107
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1750bdc14549a910800000000000000
+      internalID: 1849085270938375965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_108
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4189f769bfef1790800000000000000
+      internalID: -7557058070112009905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHeroKnight_Axe_109
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d4fa9ebd60951b0800000000000000
+      internalID: -5667491114480874193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d66ed0f0656ce5d46a8f01bf81d54995
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

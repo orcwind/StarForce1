@@ -1,0 +1,8 @@
+﻿#,Character.csv,,,,,,,,,,,,,,,
+#,Id,,AttackSpeedRate,BaseATK,Defence,HP,MaxHP,SP,MaxSP,Shield,Rage,MaxRage,MoveSpeed,FlashTime,DeadEffectId,DeadSoundId
+#,int,,float,float,float,float,float,float,float,float,float,float,float,float,int,int
+#,角色编号,策划备注,攻击速度修正系数,伤害,防御,生命,最大生命,法力值,最大法力值,护盾,怒气值,最大怒气值,移动速度,受伤闪烁时间,死亡效果,死亡声音
+,10011,红英雄剑,1,100,5,100,100,50,50,0,0,100,1,0.5,70000,20000
+,10012,红英雄斧,1,100,0,100,100,50,50,0,0,100,1,0.5,70000,20001
+,10021,黑英雄剑,1,100,5,100,100,50,50,0,0,100,1,0.5,70000,20000
+,20001,敌人01,1,100,5,100,100,50,50,0,0,100,1,0.5,70000,20000

@@ -1,0 +1,16 @@
+﻿#,attack.csv,,,,,,,,,,,,,,,,,,,,,,,,,
+#,Id,,WeaponId,WeaponDescription,WeaponType,WeaponName,AttackId,NextBatterID,AnimationName,DurationTime,AtkInterval,BackgroundId,AssetName,AtkDamage,CoolTime,CoolRemain,AttackDistance,AttackAngle,AttackWidth,CriticalRate,CriticalDamage,KnockBackDistance,KnockBackSpeed,SelectorType,SkillAttackType,AnimParaName
+#,int,,int,string,string,string,int,int,string,float,float,int,string,float,int,int,float,float,float,float,float,float,float,int,int,string
+#,模型编号,备注,武器id,武器描述,近战远程类型,武器图标名字,攻击编号,下个连击id,动画名称,持续时间,在持续时间内两次伤害之间的间隔,背景音乐编号（没有就设置为0）,特效预制件名称,伤害,冷却时间,冷却剩余,攻击距离,扇形角度,攻击范围（上下距离）,暴击率%,暴击伤害增加倍率,击退距离,击退速度,选择器Sector=1Rectangle=2Collider=3,单攻Single=1Group=2,技能对应的动画参数
+,101010,,101010,普普通通青铜剑,Melee,BronzeSword,101010,101011,101010_Attack01,0,0,0,MeleeWeapon01,10,0,0,0,0,10,5,1,0.3,1,3,2,attack01
+,101011,,101010,普普通通青铜剑,Melee,BronzeSword,101011,101012,101010_Attack02,0,0,0,MeleeWeapon01,100,0,0,0,0,10,5,1,0.3,1,3,2,attack02
+,101012,,101010,普普通通青铜剑,Melee,BronzeSword,101012,0,101010_Attack03,0,0,0,MeleeWeapon01,1000,0,0,0,0,10,5,1,0.4,1,3,2,attack03
+,101019,,101010,普普通通青铜剑,Melee,BronzeSword,101019,0,101010_AttackCR,0,0,0,MeleeWeapon01,1000,0,0,0,0,10,5,1,0.4,1,3,2,attack09
+,102010,,102010,不一样的乾坤圈,Ranged,QiankunCircle,102010,102011,102010_Attack01,0,0,0,RangedWeapon01,10,0,0,0,0,10,5,1,0.3,1,3,2,attack01
+,102011,,102010,不一样的乾坤圈,Ranged,QiankunCircle,102011,102012,102010_Attack02,0,0,0,RangedWeapon01,100,0,0,0,0,10,5,1,0.3,1,3,2,attack02
+,102012,,102010,不一样的乾坤圈,Ranged,QiankunCircle,102012,0,102010_Attack03,0,0,0,RangedWeapon01,1000,0,0,0,0,10,5,1,0.4,1,3,2,attack03
+,102019,,102010,不一样的乾坤圈,Ranged,QiankunCircle,102019,0,102010_AttackCR,0,0,0,RangedWeapon01,1000,0,0,0,0,10,5,1,0.4,1,3,2,attack09
+,101030,,101030,电锤,Melee,ThunderAxe,101010,101031,101030_Attack01,0,0,0,MeleeWeapon01,10,0,0,0,0,10,5,1,0.3,1,3,2,attack01
+,101031,,101030,电锤,Melee,ThunderAxe,101011,101032,101030_Attack02,0,0,0,MeleeWeapon01,100,0,0,0,0,10,5,1,0.3,1,3,2,attack02
+,101032,,101030,电锤,Melee,ThunderAxe,101012,0,101030_Attack03,0,0,0,MeleeWeapon01,1000,0,0,0,0,10,5,1,0.4,1,3,2,attack03
+,101039,,101030,电锤,Melee,ThunderAxe,101019,0,101030_AttackCR,0,0,0,MeleeWeapon01,1000,0,0,0,0,10,5,1,0.4,1,3,2,attack09

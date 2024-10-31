@@ -1,0 +1,2485 @@
+fileFormatVersion: 2
+guid: 11079eb94d1e4ff48a8343e1f9e1d8b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5693083233687107070
+    second: BlackHeroKnight_0
+  - first:
+      213: -2584667913783304408
+    second: BlackHeroKnight_1
+  - first:
+      213: 6296468105048963733
+    second: BlackHeroKnight_2
+  - first:
+      213: 4450280724992159041
+    second: BlackHeroKnight_3
+  - first:
+      213: -7861095270538887952
+    second: BlackHeroKnight_4
+  - first:
+      213: -8805876768429822988
+    second: BlackHeroKnight_5
+  - first:
+      213: -1948530890466502
+    second: BlackHeroKnight_6
+  - first:
+      213: -6740390841392797644
+    second: BlackHeroKnight_7
+  - first:
+      213: 7039250319149444460
+    second: BlackHeroKnight_8
+  - first:
+      213: 3425944874147217329
+    second: BlackHeroKnight_9
+  - first:
+      213: 7583810339546340092
+    second: BlackHeroKnight_10
+  - first:
+      213: 8868929618386124083
+    second: BlackHeroKnight_11
+  - first:
+      213: -2688527071177639570
+    second: BlackHeroKnight_12
+  - first:
+      213: -2233618550392112364
+    second: BlackHeroKnight_13
+  - first:
+      213: 1304171016890090662
+    second: BlackHeroKnight_14
+  - first:
+      213: -7706224138766166447
+    second: BlackHeroKnight_15
+  - first:
+      213: -3462130738203516720
+    second: BlackHeroKnight_16
+  - first:
+      213: 7477093437578176722
+    second: BlackHeroKnight_17
+  - first:
+      213: -4367317628346426349
+    second: BlackHeroKnight_18
+  - first:
+      213: 7267288477312188596
+    second: BlackHeroKnight_19
+  - first:
+      213: 4137481942857250657
+    second: BlackHeroKnight_20
+  - first:
+      213: -1306710535933582686
+    second: BlackHeroKnight_21
+  - first:
+      213: -5349596156612000148
+    second: BlackHeroKnight_22
+  - first:
+      213: -8940684190719822079
+    second: BlackHeroKnight_23
+  - first:
+      213: 293802195798046570
+    second: BlackHeroKnight_24
+  - first:
+      213: 7816012461170404089
+    second: BlackHeroKnight_25
+  - first:
+      213: 3037289966930500255
+    second: BlackHeroKnight_26
+  - first:
+      213: 2113610181912385859
+    second: BlackHeroKnight_27
+  - first:
+      213: 438145143395711519
+    second: BlackHeroKnight_28
+  - first:
+      213: 5471787531911865431
+    second: BlackHeroKnight_29
+  - first:
+      213: -5773877624447297328
+    second: BlackHeroKnight_30
+  - first:
+      213: -3443771186854352513
+    second: BlackHeroKnight_31
+  - first:
+      213: -2555432198476794690
+    second: BlackHeroKnight_32
+  - first:
+      213: 4976825023917346732
+    second: BlackHeroKnight_33
+  - first:
+      213: -3125445189021888638
+    second: BlackHeroKnight_34
+  - first:
+      213: -3253947181763707560
+    second: BlackHeroKnight_35
+  - first:
+      213: 5475870888747065115
+    second: BlackHeroKnight_36
+  - first:
+      213: -1734530727790168772
+    second: BlackHeroKnight_37
+  - first:
+      213: -7714181508602479792
+    second: BlackHeroKnight_38
+  - first:
+      213: -306072218061434953
+    second: BlackHeroKnight_39
+  - first:
+      213: -270363280119586818
+    second: BlackHeroKnight_40
+  - first:
+      213: 2524296445204747541
+    second: BlackHeroKnight_41
+  - first:
+      213: -7623500216879138736
+    second: BlackHeroKnight_42
+  - first:
+      213: 6493453332635677706
+    second: BlackHeroKnight_43
+  - first:
+      213: 8421475452713108511
+    second: BlackHeroKnight_44
+  - first:
+      213: -5573128362895250035
+    second: BlackHeroKnight_45
+  - first:
+      213: -3556021368904146421
+    second: BlackHeroKnight_46
+  - first:
+      213: -4439667153095192178
+    second: BlackHeroKnight_47
+  - first:
+      213: -3222860811250155123
+    second: BlackHeroKnight_48
+  - first:
+      213: 3841944701139368530
+    second: BlackHeroKnight_49
+  - first:
+      213: 2191221588592286396
+    second: BlackHeroKnight_50
+  - first:
+      213: -4598367263965395800
+    second: BlackHeroKnight_51
+  - first:
+      213: 5141020384198074852
+    second: BlackHeroKnight_52
+  - first:
+      213: -424020251938193517
+    second: BlackHeroKnight_53
+  - first:
+      213: -807069561059611645
+    second: BlackHeroKnight_54
+  - first:
+      213: 2685192054179908852
+    second: BlackHeroKnight_55
+  - first:
+      213: -6055206423027320167
+    second: BlackHeroKnight_56
+  - first:
+      213: -8493424588555913614
+    second: BlackHeroKnight_57
+  - first:
+      213: 5447287204184199239
+    second: BlackHeroKnight_58
+  - first:
+      213: -4319025571255346388
+    second: BlackHeroKnight_59
+  - first:
+      213: -4753240257817939010
+    second: BlackHeroKnight_60
+  - first:
+      213: -119494090663904514
+    second: BlackHeroKnight_61
+  - first:
+      213: 5644736300867469094
+    second: BlackHeroKnight_62
+  - first:
+      213: 7016033805665821602
+    second: BlackHeroKnight_63
+  - first:
+      213: -723151095782318955
+    second: BlackHeroKnight_64
+  - first:
+      213: 7229555258533798895
+    second: BlackHeroKnight_65
+  - first:
+      213: 4316488306422049896
+    second: BlackHeroKnight_66
+  - first:
+      213: -1290938780720564347
+    second: BlackHeroKnight_67
+  - first:
+      213: -1876769412207774885
+    second: BlackHeroKnight_68
+  - first:
+      213: 8266183309732430017
+    second: BlackHeroKnight_69
+  - first:
+      213: -809357958105971415
+    second: BlackHeroKnight_70
+  - first:
+      213: 476294498981038541
+    second: BlackHeroKnight_71
+  - first:
+      213: 7536933027399904991
+    second: BlackHeroKnight_72
+  - first:
+      213: 3774827258314080909
+    second: BlackHeroKnight_73
+  - first:
+      213: 8112680228986796375
+    second: BlackHeroKnight_74
+  - first:
+      213: 1943377538706129259
+    second: BlackHeroKnight_75
+  - first:
+      213: 4362096802334562705
+    second: BlackHeroKnight_76
+  - first:
+      213: -1438774401379551801
+    second: BlackHeroKnight_77
+  - first:
+      213: -1847387183368061383
+    second: BlackHeroKnight_78
+  - first:
+      213: -808671444607797194
+    second: BlackHeroKnight_79
+  - first:
+      213: -2744153986927583232
+    second: BlackHeroKnight_80
+  - first:
+      213: -5964711064469736321
+    second: BlackHeroKnight_81
+  - first:
+      213: -4275306738080262409
+    second: BlackHeroKnight_82
+  - first:
+      213: 29184743615977806
+    second: BlackHeroKnight_83
+  - first:
+      213: 6386378934664453017
+    second: BlackHeroKnight_84
+  - first:
+      213: 8323506321603417213
+    second: BlackHeroKnight_85
+  - first:
+      213: 3070769475340172082
+    second: BlackHeroKnight_86
+  - first:
+      213: 286784626389265203
+    second: BlackHeroKnight_87
+  - first:
+      213: 8825755126838140875
+    second: BlackHeroKnight_88
+  - first:
+      213: 2298135271608552279
+    second: BlackHeroKnight_89
+  - first:
+      213: 2230463711051512712
+    second: BlackHeroKnight_90
+  - first:
+      213: 7999808156309938286
+    second: BlackHeroKnight_91
+  - first:
+      213: 3030311234073766114
+    second: BlackHeroKnight_92
+  - first:
+      213: 4314268522975322775
+    second: BlackHeroKnight_93
+  - first:
+      213: 662255879403074303
+    second: BlackHeroKnight_94
+  - first:
+      213: 3742142497890393740
+    second: BlackHeroKnight_95
+  - first:
+      213: 1326498524686289012
+    second: BlackHeroKnight_96
+  - first:
+      213: 1431071689686006863
+    second: BlackHeroKnight_97
+  - first:
+      213: 3231830646832979839
+    second: BlackHeroKnight_98
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlackHeroKnight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5f6aca905e10f40800000000000000
+      internalID: 5693083233687107070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f98900a3a612cd0800000000000000
+      internalID: -2584667913783304408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a3505a16c816750800000000000000
+      internalID: 6296468105048963733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dece3adb292cd30800000000000000
+      internalID: 4450280724992159041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcb6065087c7e290800000000000000
+      internalID: -7861095270538887952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb20e11cbd3bc580800000000000000
+      internalID: -8805876768429822988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b907c42d319fff0800000000000000
+      internalID: -1948530890466502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4386c7bed325572a0800000000000000
+      internalID: -6740390841392797644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d25f5aed070b160800000000000000
+      internalID: 7039250319149444460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 495
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf7d9b26b66b8f20800000000000000
+      internalID: 3425944874147217329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa1894b25b1f3960800000000000000
+      internalID: 7583810339546340092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d78d19f74c41b70800000000000000
+      internalID: 8868929618386124083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e697f698fde60bad0800000000000000
+      internalID: -2688527071177639570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bb72c33c79001e0800000000000000
+      internalID: -2233618550392112364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4081c41a8591210800000000000000
+      internalID: 1304171016890090662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_15
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1565d41a9fdfd0590800000000000000
+      internalID: -7706224138766166447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d02b6fcf6a04ffc0800000000000000
+      internalID: -3462130738203516720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8604bbdd8f3c760800000000000000
+      internalID: 7477093437578176722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c1c1d81cb2463c0800000000000000
+      internalID: -4367317628346426349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 440
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b08b7acd589ad460800000000000000
+      internalID: 7267288477312188596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167799cd7e94b6930800000000000000
+      internalID: 4137481942857250657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a22b69d0b1addde0800000000000000
+      internalID: -1306710535933582686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66c85193aa62c5b0800000000000000
+      internalID: -5349596156612000148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_23
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107b13b291f4ce380800000000000000
+      internalID: -8940684190719822079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67b5ca5a8bc31400800000000000000
+      internalID: 293802195798046570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faa6142ced087c60800000000000000
+      internalID: 7816012461170404089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a10c6f12f962a20800000000000000
+      internalID: 3037289966930500255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_27
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3495986134d055d10800000000000000
+      internalID: 2113610181912385859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1af920cfaa941600800000000000000
+      internalID: 438145143395711519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_29
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 385
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754a40ef4c1bfeb40800000000000000
+      internalID: 5471787531911865431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d81e3254e01fdfa0800000000000000
+      internalID: -5773877624447297328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7922d7f9544530d0800000000000000
+      internalID: -3443771186854352513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4f13a64f7498cd0800000000000000
+      internalID: -2555432198476794690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf4edbadfb311540800000000000000
+      internalID: 4976825023917346732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f856fe82030a4d0800000000000000
+      internalID: -3125445189021888638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d37114748a7d2d0800000000000000
+      internalID: -3253947181763707560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fdba79f833efb40800000000000000
+      internalID: 5475870888747065115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_37
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3531163e75bde7e0800000000000000
+      internalID: -1734530727790168772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_38
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bbcd61ac8b1f490800000000000000
+      internalID: -7714181508602479792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_39
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 330
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf05d670fc90cbf0800000000000000
+      internalID: -306072218061434953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff9928770a7f3cf0800000000000000
+      internalID: -270363280119586818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515d53c1e3a180320800000000000000
+      internalID: 2524296445204747541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0583ecb91f2e33690800000000000000
+      internalID: -7623500216879138736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a047359f6616d1a50800000000000000
+      internalID: 6493453332635677706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1403ab2e471fd470800000000000000
+      internalID: 8421475452713108511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d69f9184548a2b0800000000000000
+      internalID: -5573128362895250035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0225c4d76976aec0800000000000000
+      internalID: -3556021368904146421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e819ac22f322362c0800000000000000
+      internalID: -4439667153095192178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_48
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8148e8ea291643d0800000000000000
+      internalID: -3222860811250155123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_49
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 275
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a3b16a954515530800000000000000
+      internalID: 3841944701139368530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbad53cdc68c86e10800000000000000
+      internalID: 2191221588592286396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4ce8c26515f20c0800000000000000
+      internalID: -4598367263965395800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e12b271dc2985740800000000000000
+      internalID: 5141020384198074852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_53
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ff6a1d3d39d1af0800000000000000
+      internalID: -424020251938193517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_54
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ce200a286bcc4f0800000000000000
+      internalID: -807069561059611645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_55
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc481f42f7b34520800000000000000
+      internalID: 2685192054179908852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99afac117d597fba0800000000000000
+      internalID: -6055206423027320167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_57
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2767e88365b412a80800000000000000
+      internalID: -8493424588555913614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_58
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7401eeae9d6a89b40800000000000000
+      internalID: 5447287204184199239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_59
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 220
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b1f79402dbf04c0800000000000000
+      internalID: -4319025571255346388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3fca45b29190eb0800000000000000
+      internalID: -4753240257817939010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_61
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa3835f1c8775ef0800000000000000
+      internalID: -119494090663904514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f35ff22c1265e40800000000000000
+      internalID: 5644736300867469094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_63
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3e7ded295fd5160800000000000000
+      internalID: 7016033805665821602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_64
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cd5f8e8e9d6f5f0800000000000000
+      internalID: -723151095782318955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_65
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3e6fc243a845460800000000000000
+      internalID: 7229555258533798895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ce965be3f37eb30800000000000000
+      internalID: 4316488306422049896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_67
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587ff54c40aa51ee0800000000000000
+      internalID: -1290938780720564347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_68
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b537904c92064f5e0800000000000000
+      internalID: -1876769412207774885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_69
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 165
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c04dd09ce167b270800000000000000
+      internalID: 8266183309732430017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92545faa93594c4f0800000000000000
+      internalID: -809357958105971415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_71
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9cc34c2532c9600800000000000000
+      internalID: 476294498981038541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_72
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdea412f7a0989860800000000000000
+      internalID: 7536933027399904991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_73
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82c54c3461e26430800000000000000
+      internalID: 3774827258314080909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759b7197fa7069070800000000000000
+      internalID: 8112680228986796375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_75
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b614d03339348fa10800000000000000
+      internalID: 1943377538706129259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_76
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199d40b2ee7498c30800000000000000
+      internalID: 4362096802334562705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_77
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5b8dd0e42780ce0800000000000000
+      internalID: -1438774401379551801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_78
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ebcb40523cc56e0800000000000000
+      internalID: -1847387183368061383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_79
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 110
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638762c0b9507c4f0800000000000000
+      internalID: -808671444607797194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000a530fc7ecae9d0800000000000000
+      internalID: -2744153986927583232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_81
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f747076a3e6193da0800000000000000
+      internalID: -5964711064469736321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_82
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f654ea5c2f0ba4c0800000000000000
+      internalID: -4275306738080262409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_83
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e495714ae5fa76000800000000000000
+      internalID: 29184743615977806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_84
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b56b9fdc9f0a850800000000000000
+      internalID: 6386378934664453017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_85
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74d3e056e8038370800000000000000
+      internalID: 8323506321603417213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_86
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b73c471909d9a20800000000000000
+      internalID: 3070769475340172082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_87
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ba9f6291ddaf300800000000000000
+      internalID: 286784626389265203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_88
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf15c9e6816b7a70800000000000000
+      internalID: 8825755126838140875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_89
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 55
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b060e7add94ef10800000000000000
+      internalID: 2298135271608552279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bff9d7de234fe10800000000000000
+      internalID: 2230463711051512712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_91
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6060242227050f60800000000000000
+      internalID: 7999808156309938286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_92
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8a7d91304dd0a20800000000000000
+      internalID: 3030311234073766114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_93
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792e7991d5c5fdb30800000000000000
+      internalID: 4314268522975322775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_94
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2fb3aa63ec03900800000000000000
+      internalID: 662255879403074303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_95
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e56ad66c2cee330800000000000000
+      internalID: 3742142497890393740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_96
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478810f416ba86210800000000000000
+      internalID: 1326498524686289012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_97
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c3adf9e103cd310800000000000000
+      internalID: 1431071689686006863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHeroKnight_98
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 100
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f53bea9d4c9dc20800000000000000
+      internalID: 3231830646832979839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: de4fc8284e32a4342a208bc227b55ab6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

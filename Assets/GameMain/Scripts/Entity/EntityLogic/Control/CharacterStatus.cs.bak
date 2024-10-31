@@ -1,0 +1,151 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using UnityEngine;
+using Common;
+using System.Security.Cryptography.X509Certificates;
+using TMPro;
+
+
+namespace StarForce
+
+
+{
+    /// <summary>
+    /// 角色状态
+    /// </summary>
+    public abstract class CharacterStatus : MonoBehaviour
+    {
+       
+        public CharacterAnimationParameter chParams;
+        
+        /// <summary>
+        /// 攻击距离
+        /// </summary>
+        public float attackDistance;
+
+        /// <summary>
+        /// 攻击速度
+        /// </summary>
+        public float attackSpeed;
+
+        /// <summary>
+        /// 伤害
+        /// </summary>
+        public float baseATK;
+
+        /// <summary>
+        /// 防御
+        /// </summary>
+        public float defence;
+
+        /// <summary>
+        /// 生命
+        /// </summary>
+        public float HP;
+
+        /// <summary>
+        /// 最大生命
+        /// </summary>
+        public float MaxHP;
+
+        /// <summary>
+        /// 最大魔法
+        /// </summary>
+        public float MaxSP;
+
+        /// <summary>
+        /// 魔法
+        /// </summary>
+        public float SP;
+
+        /// <summary>
+        /// 普攻蓄力时间
+        /// </summary>
+        public float meleeAttackTime;
+
+        /// <summary>
+        /// 射击蓄力时间
+        /// </summary>
+        public float shootChargeTime;
+
+        /// <summary>
+        /// 怒气值
+        /// </summary>
+        public float rage;
+
+        /// <summary>
+        /// 攻击间隔
+        /// </summary>
+        public int attackInterval;
+
+        /// <summary>
+        /// 移动速度
+        /// </summary>
+        public float moveSpeed;
+
+        
+        /// <summary>
+        /// 死亡
+        /// </summary>
+        abstract public void Death();
+
+        
+        public GameObject damageDisplayPre;       
+
+        virtual public void Damage(float damageVal)
+        {            
+             //写所有受到伤害是共性的表现 HP减少！
+             //受击者 有防御能力
+             damageVal = damageVal - defence;
+          
+           //GameObject ob= GameObjectPool.Instance.CreateObject(damageValue, damageDisplayPre, this.transform.position, Quaternion.identity);
+           //ob.GetComponent<DamageDisplay>().damageValue = damageVal;
+            if (damageVal <= 0) return;
+            HP -= damageVal;
+
+            
+            //受击后变颜色，暂时是红色，可根据伤害元素类型改变
+            FlashColor(flashTime,Color.red);
+             if (HP <= 0) Death();
+            //子类可以再加上个性的表现
+        }
+        //受击 同时播放受击 特效：需要找到 受击特效挂载点
+        public Transform HitFxPos;
+
+
+        private Color originalColor;
+        public SpriteRenderer spriteRenderer;
+        private void Start()
+        {          
+            spriteRenderer =this.GetComponentInChildren<SpriteRenderer>();
+            originalColor=spriteRenderer.color;
+            //HitFxPos=FindChildByName("HitFxPos");
+            //HitFxPos = .FindChild(transform, "HitFxPos");
+        }
+
+        //受伤闪烁时间
+        public float flashTime=0.5f;
+
+        /// <summary>
+        /// 属性攻击变色
+        /// </summary>
+        /// <param name="time">属性持续时间</param>
+        /// <param name="color">属性类型对应颜色</param>
+        public void FlashColor(float time, Color color)
+        {
+            spriteRenderer.color = color;
+            Invoke("ResetColor",time);
+            
+        }
+
+        //恢复成原有颜色
+        public void ResetColor()
+        {
+            spriteRenderer.color = originalColor;
+        }
+        
+
+    }
+}
