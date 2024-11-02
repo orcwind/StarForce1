@@ -46,7 +46,7 @@ namespace StarForce
         // 添加新方法：生成地面武器
         public void SpawnWeaponOnGround(int weaponId, Vector3 position)
         {
-            Log.Info($"尝试生成地面武器: WeaponId={weaponId}, Position={position}");
+            // Log.Info($"尝试生成地面武器: WeaponId={weaponId}, Position={position}");
             
             if (!m_WeaponInfoDict.ContainsKey(weaponId))
             {
@@ -54,10 +54,12 @@ namespace StarForce
                 return;
             }
 
+            const int GROUND_WEAPON_TYPE_ID = 100000;  // 从 Entity.csv 中读取的地面武器实体类型ID
+            
             GameEntry.Entity.ShowGroundWeapon(new GroundWeaponData(
-                GameEntry.Entity.GenerateSerialId(),
-                100000,  // GroundWeapon的typeId
-                weaponId,
+                GameEntry.Entity.GenerateSerialId(),  // 实体ID
+                GROUND_WEAPON_TYPE_ID,                // 地面武器的实体类型ID
+                weaponId,                            // 具体武器的类型ID
                 CampType.Player)
             {
                 Position = position,

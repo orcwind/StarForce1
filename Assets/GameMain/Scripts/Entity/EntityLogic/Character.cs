@@ -17,8 +17,13 @@ namespace StarForce
     /// </summary>
     public abstract class Character : TargetableObject
     {
-        [SerializeField]
-        public CharacterData m_CharacterData = null;
+        protected CharacterData m_CharacterData;
+
+        public CharacterData CharacterData
+        {
+            get { return m_CharacterData; }
+            protected set { m_CharacterData = value; }
+        }
 
         [SerializeField]
         private WeaponInfo m_WeaponInfo;
@@ -29,47 +34,41 @@ namespace StarForce
         [SerializeField]
         private Color m_OriginalColor;
 
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnShow(object userData)
-#else
-        protected internal override void OnShow(object userData)
-#endif
+        protected override void OnInit(object userData)
         {
-            base.OnShow(userData);
-
-            m_CharacterData = userData as CharacterData;
-             
-            if (m_CharacterData == null)
-            {
-                Log.Error("Character data is invalid.");
-                return;
-            }
-           
-            Name = Utility.Text.Format("Character ({0})", Id);
-       
-            //记录初始颜色
-            m_SpriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
-            m_OriginalColor = m_SpriteRenderer.color;
-                //HitFxPos=FindChildByName("HitFxPos");
-                //HitFxPos = .FindChild(transform, "HitFxPos");
-           
+            base.OnInit(userData);
+            Log.Debug($"Character OnInit - userData type: {userData?.GetType().Name ?? "null"}");
         }
 
-#if UNITY_2017_3_OR_NEWER
+        protected override void OnShow(object userData)
+        {
+            base.OnShow(userData);
+            
+            // 设置数据
+            m_CharacterData = userData as CharacterData;
+            if (m_CharacterData == null)
+            {
+                Log.Error($"Invalid character data type: {userData?.GetType().Name ?? "null"}");
+                return;
+            }
+
+            Log.Debug($"Character data set successfully: {m_CharacterData.GetType().Name}");
+        }
+
+        #if UNITY_2017_3_OR_NEWER
         protected override void OnHide(bool isShutdown, object userData)
-#else
+        #else
         protected internal override void OnHide(bool isShutdown, object userData)
-#endif
+        #endif
         {
             base.OnHide(isShutdown, userData);
         }
 
-#if UNITY_2017_3_OR_NEWER
+        #if UNITY_2017_3_OR_NEWER
         protected override void OnAttached(EntityLogic childEntity, Transform parentTransform, object userData)
-#else
+        #else
         protected internal override void OnAttached(EntityLogic childEntity, Transform parentTransform, object userData)
-#endif
+        #endif
         {
             base.OnAttached(childEntity, parentTransform, userData);
             #region
@@ -93,11 +92,11 @@ namespace StarForce
             #endregion
         }
 
-#if UNITY_2017_3_OR_NEWER
+        #if UNITY_2017_3_OR_NEWER
         protected override void OnDetached(EntityLogic childEntity, object userData)
-#else
+        #else
         protected internal override void OnDetached(EntityLogic childEntity, object userData)
-#endif
+        #endif
         {
             base.OnDetached(childEntity, userData);
 
@@ -126,16 +125,16 @@ namespace StarForce
         {
             base.OnDead(attacker);
 
-            GameEntry.Entity.ShowEffect(new EffectData(GameEntry.Entity.GenerateSerialId(), m_CharacterData.DeadEffectId)
+            GameEntry.Entity.ShowEffect(new EffectData(GameEntry.Entity.GenerateSerialId(), CharacterData.DeadEffectId)
             {
                 Position = CachedTransform.localPosition,
             });
-            GameEntry.Sound.PlaySound(m_CharacterData.DeadSoundId);
+            GameEntry.Sound.PlaySound(CharacterData.DeadSoundId);
         }
 
         public override ImpactData GetImpactData()
         {
-            return new ImpactData(m_CharacterData.Camp, m_CharacterData.HP, 0, m_CharacterData.Defense);
+            return new ImpactData(CharacterData.Camp, CharacterData.HP, 0, CharacterData.Defense);
         }
 
         /// <summary>
@@ -166,17 +165,17 @@ namespace StarForce
         {
             //写所有受到伤害是共性的表现 HP减少！
             //受击者 有防御能力
-            damageVal = damageVal - m_CharacterData.Defense;
+            damageVal = damageVal - CharacterData.Defense;
 
             //GameObject ob= GameObjectPool.Instance.CreateObject(damageValue, damageDisplayPre, this.transform.position, Quaternion.identity);
             //ob.GetComponent<DamageDisplay>().damageValue = damageVal;
             if (damageVal <= 0) return;
-            m_CharacterData.HP -= damageVal;
+            CharacterData.HP -= damageVal;
 
 
             //受击后变颜色，暂时是红色，可根据伤害元素类型改变
-            FlashColor(m_CharacterData.FlashTime, Color.red);
-            if (m_CharacterData.HP <= 0) Death();
+            FlashColor(CharacterData.FlashTime, Color.red);
+            if (CharacterData.HP <= 0) Death();
             //子类可以再加上个性的表现
         }
         //受击 同时播放受击 特效：需要找到 受击特效挂载点
@@ -184,33 +183,33 @@ namespace StarForce
 
         public void EquipWeapon(int weaponId)
         {
-            Log.Info($"开始装备武器: 当前WeaponId={m_CharacterData.WeaponId}, 新WeaponId={weaponId}");
+            Log.Info($"开始装备武器: 当前WeaponId={CharacterData.WeaponId}, 新WeaponId={weaponId}");
             
             // 更新 CharacterData 中的 WeaponId
-            m_CharacterData.WeaponId = weaponId;
+            CharacterData.WeaponId = weaponId;
             
             // 更新武器信息
             UpdateWeaponInfo();
             
-            Log.Info($"武器装备完成: 当前WeaponId={m_CharacterData.WeaponId}");
+            Log.Info($"武器装备完成: 当前WeaponId={CharacterData.WeaponId}");
         }
 
         private void UpdateWeaponInfo()
         {
-            if (m_CharacterData.WeaponId == 0)
+            if (CharacterData.WeaponId == 0)
             {
                 m_WeaponInfo = null;
                 Log.Info("清除武器信息");
                 return;
             }
             
-            Log.Info($"更新武器信息: WeaponId={m_CharacterData.WeaponId}");
-            m_WeaponInfo = new WeaponInfo(m_CharacterData.WeaponId);
+            Log.Info($"更新武器信息: WeaponId={CharacterData.WeaponId}");
+            m_WeaponInfo = new WeaponInfo(CharacterData.WeaponId);
         }
 
         public bool CanAttack()
         {
-            return m_CharacterData.WeaponId != 0 && m_WeaponInfo != null;
+            return CharacterData.WeaponId != 0 && m_WeaponInfo != null;
         }
 
         public void Attack()
@@ -226,7 +225,7 @@ namespace StarForce
             var attackData = m_WeaponInfo.GetAttackData(1); // 这里的1是默认攻击ID，你可能需要根据具体攻击类型传入不同的ID
             if (attackData != null)
             {
-                Log.Info($"执行攻击: WeaponId={m_CharacterData.WeaponId}, AttackId={attackData.Id}");
+                Log.Info($"执行攻击: WeaponId={CharacterData.WeaponId}, AttackId={attackData.Id}");
                 // 执行具体的攻击逻辑
             }
         }
@@ -241,6 +240,12 @@ namespace StarForce
         public AttackData GetCurrentAttackData(int attackId)
         {
             return m_WeaponInfo?.GetAttackData(attackId);
+        }
+
+        // 添加公共方法获取数据
+        public CharacterData GetCharacterData()
+        {
+            return m_CharacterData;
         }
     }
 }

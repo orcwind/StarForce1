@@ -19,6 +19,9 @@ namespace StarForce
         protected override void OnInit(object userData)
         {
             base.OnInit(userData);
+
+
+            
             
             m_SpriteRenderer =transform.GetChild(0).GetComponent<SpriteRenderer>();
             m_Collider = GetComponent<Collider2D>();
@@ -44,29 +47,23 @@ namespace StarForce
         {
             base.OnShow(userData);
             
-            // 确保 userData 是 GroundWeaponData 类型
-            GroundWeaponData groundWeaponData = userData as GroundWeaponData;
-            if (groundWeaponData == null)
-            {
-                Log.Error("无效的地面武器数据：userData 不是 GroundWeaponData 类型");
-                return;
-            }
+             var groundWeaponData = userData as GroundWeaponData;
+        if (groundWeaponData == null)
+        {
+            Log.Error("Ground weapon data is invalid.");
+            return;
+        }
+        
+        // 获取武器数据
+        m_WeaponData = groundWeaponData.WeaponData;
 
-            // 根据武器ID创建WeaponData
-            m_WeaponData = new WeaponData(
-                GameEntry.Entity.GenerateSerialId(), 
-                groundWeaponData.WeaponId,  // 使用传入的具体武器ID
-                0,  // 没有所有者
-                groundWeaponData.OwnerCamp
-            );
-            
-            Log.Info($"地面武器显示: WeaponId={m_WeaponData.WeaponId}, WeaponName={m_WeaponData.WeaponName}");
+           
 
             // 尝试加载武器图标
             Sprite weaponSprite = ItemIconLoader.LoadIcon(m_WeaponData.WeaponName, ItemType.Weapon);
             if (weaponSprite != null)
             {
-                Log.Info($"成功加载武器图标：{m_WeaponData.WeaponName}");
+              //  Log.Info($"成功加载武器图标：{m_WeaponData.WeaponName}");
                 m_SpriteRenderer.sprite = weaponSprite;
             }
             else
@@ -91,12 +88,12 @@ namespace StarForce
         private void OnEnable()
         {
             // 仅用于调试
-            Log.Info($"GroundWeapon {gameObject.name} enabled on layer: {LayerMask.LayerToName(gameObject.layer)}");
+            //Log.Info($"GroundWeapon {gameObject.name} enabled on layer: {LayerMask.LayerToName(gameObject.layer)}");
         }
 
         public void Interact(PlayerController playerController)
         {
-            Log.Info($"GroundWeapon.Interact 被调用: WeaponId={m_WeaponData.WeaponId}");
+           // Log.Info($"GroundWeapon.Interact 被调用: WeaponId={m_WeaponData.WeaponId}");
             if (playerController == null)
             {
                 Log.Error("PlayerController is null");
@@ -111,34 +108,23 @@ namespace StarForce
                 return;
             }
 
+          //  Log.Info($"开始拾取武器: 地面武器ID={m_WeaponData.WeaponId}");
+            //Log.Info($"玩家当前武器ID={playerData.WeaponId}");
+
             // 保存旧武器ID
             int oldWeaponId = playerData.WeaponId;
 
-            // 更新 PlayerData 中的 WeaponId
-            playerData.WeaponId = m_WeaponData.WeaponId;
-            playerController.GetComponent<Player>().PlayerData.WeaponId = m_WeaponData.WeaponId;
-
-            Log.Info($"开始拾取武器: 地面武器ID={m_WeaponData.WeaponId}");
-            Log.Info($"更新后的武器ID={playerData.WeaponId}");
-
-            // 更新动画控制器
-            WeaponAnimationController weaponAnimController = playerController.GetComponentInChildren<WeaponAnimationController>();
-            if (weaponAnimController != null)
-            {
-                weaponAnimController.UpdateAnimationController(m_WeaponData.WeaponId);
-                Log.Info($"武器动画控制器更新完成: WeaponId={m_WeaponData.WeaponId}");
-            }
-            else
-            {
-                Log.Error("WeaponAnimationController not found on PlayerController");
-            }
+            // 直接更新 PlayerData 中的 WeaponId
+            playerData.WeaponId = m_WeaponData.WeaponId; 
+          
+            playerController.GetComponent<Player>().PlayerData.WeaponId=playerData.WeaponId;
 
             // 如果有旧武器，则掉落
             if (oldWeaponId != 0)
             {
                 Vector3 dropPosition = playerController.transform.position + playerController.transform.right * 0.5f;
                 WeaponManager.Instance.SpawnWeaponOnGround(oldWeaponId, dropPosition);
-                Log.Info($"掉落旧武器: WeaponId={oldWeaponId}, Position={dropPosition}");
+               // Log.Info($"掉落旧武器: WeaponId={oldWeaponId}, Position={dropPosition}");
             }
 
             GameEntry.Entity.HideEntity(this);

@@ -16,7 +16,7 @@ namespace StarForce
     public abstract class TargetableObject : Entity
     {
         [SerializeField]
-        private TargetableObjectData m_TargetableObjectData = null;
+        protected TargetableObjectData m_TargetableObjectData;
 
         public bool IsDead
         {
@@ -52,6 +52,7 @@ namespace StarForce
         {
             base.OnInit(userData);
             gameObject.SetLayerRecursively(Constant.Layer.TargetableObjectLayerId);
+            Log.Debug($"TargetableObject OnInit - userData type: {userData?.GetType().Name ?? "null"}");
         }
 
 #if UNITY_2017_3_OR_NEWER

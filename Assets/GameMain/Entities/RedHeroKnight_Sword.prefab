@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7298401241313562897}
   - component: {fileID: 4090820381237975488}
   - component: {fileID: 639402165856563208}
+  - component: {fileID: 3105013876904210588}
   m_Layer: 0
   m_Name: HeroKnight
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 3012625422562709183}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ce16543ca16a1a94ca344930d8f6268d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1b766f57ae71f9e4ca7226ee12238ae4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -117,6 +118,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 211f2542b1cf8f440830f48a960968a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3105013876904210588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012625422562709183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f515552ae0e0546b72ee78006a2be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4060446208681404437
@@ -234,7 +247,6 @@ GameObject:
   - component: {fileID: -8010997433659947788}
   - component: {fileID: -6572595888681580194}
   - component: {fileID: -2889068553026875486}
-  - component: {fileID: 291325981687910771}
   m_Layer: 0
   m_Name: RedHeroKnight_Sword
   m_TagString: Untagged
@@ -330,7 +342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797e8cbc705510843ac4844a5cb59cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSpeed: 3
   jumpHeight: 0.7
   aSpeed: -15
   rateY: 0.5
@@ -373,18 +384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedTarget: {fileID: 0}
---- !u!114 &291325981687910771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4899368072879206662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15030ef541f45d34280ee510eb024bba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7131297450303598512
 GameObject:
   m_ObjectHideFlags: 0

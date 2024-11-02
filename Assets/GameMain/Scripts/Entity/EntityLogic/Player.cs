@@ -14,21 +14,32 @@ namespace StarForce
 {
     public class Player : Character
     {
+       
         private Vector3 m_TargetPosition = Vector3.zero;
 
+       
         private PlayerController m_Controller;
 
+      
         private CharacterMotor m_CharacterMotor;
 
+   
         private CharacterSKillManager m_CharacterSKillManager;
 
+    
         private CharacterSkillSystem m_SkillSystem;
 
-        private WeaponAnimationController m_WeaponAnimController;
-
+        [SerializeField]
+        private PlayerData m_PlayerData;
+       
         public PlayerData PlayerData
         {
-            get { return (PlayerData)m_CharacterData; }
+            get { return m_CharacterData as PlayerData; }
+            private set 
+            { 
+                m_CharacterData = value;
+                m_PlayerData = value;
+            }
         }
 
         public override void Death()
@@ -43,12 +54,20 @@ namespace StarForce
         protected internal override void OnInit(object userData)
 #endif
         {
-            base.OnInit(userData);       
-            //m_Controller= GetComponent<PlayerController>();
-            //m_CharacterSKillManager = GetComponent<CharacterSKillManager>();
-            //m_CharacterMotor=GetComponent<CharacterMotor>();
-            //m_SkillSystem= GetComponent<CharacterSkillSystem>();
-
+            base.OnInit(userData);
+            
+            Log.Info("Player OnInit开始");
+            
+            // 确保WeaponAnimationController在正确的位置
+            var animController = GetComponentInChildren<WeaponAnimationController>();
+            if (animController == null)
+            {
+                Log.Error("未找到WeaponAnimationController组件，请检查预制体结构");
+            }
+            else
+            {
+                Log.Info("成功找到WeaponAnimationController组件");
+            }
         }
 
 #if UNITY_2017_3_OR_NEWER
@@ -58,24 +77,31 @@ namespace StarForce
 #endif
         {
             base.OnShow(userData);
-            if (!(m_CharacterData is PlayerData))
+            
+            if (m_CharacterData == null)
             {
-                Log.Error("Player data is invalid.");
+                Log.Error("Character data is null after base.OnShow");
                 return;
             }
-         
 
-            #region
-            //ScrollableBackground sceneBackground = FindObjectOfType<ScrollableBackground>();
-            //if (sceneBackground == null)
-            //{
-            //    Log.Warning("Can not find scene background.");
-            //    return;
-            //}
+            // 设置数据
+            PlayerData = m_CharacterData as PlayerData;
+            if (PlayerData == null)
+            {
+                Log.Error("Invalid player data type");
+                return;
+            }
 
-            //m_PlayerMoveBoundary = new Rect(sceneBackground.PlayerMoveBoundary.bounds.min.x, sceneBackground.PlayerMoveBoundary.bounds.min.z,
-            //    sceneBackground.PlayerMoveBoundary.bounds.size.x, sceneBackground.PlayerMoveBoundary.bounds.size.z);
-            #endregion
+            // 确保序列化字段也被更新
+            m_PlayerData = PlayerData;
+
+            if (m_Controller != null)
+            {
+                m_Controller.SetPlayerData(PlayerData);
+                Log.Debug($"Set player data to controller: {PlayerData.Name}");
+            }
+
+            Log.Debug($"Player OnShow - PlayerData: {PlayerData.Name}, Controller: {m_Controller != null}");
         }
 
 #if UNITY_2017_3_OR_NEWER
@@ -113,20 +139,6 @@ namespace StarForce
             //    Mathf.Clamp(CachedTransform.localPosition.z + speed.z, m_PlayerMoveBoundary.yMin, m_PlayerMoveBoundary.yMax)
             //);
             #endregion
-        }
-
-        private void Start()
-        {
-            m_WeaponAnimController = GetComponentInChildren<WeaponAnimationController>();
-        }
-
-        public void ChangeWeapon(int newWeaponId)
-        {
-            PlayerData.WeaponId = newWeaponId;
-            if (m_WeaponAnimController != null)
-            {
-                m_WeaponAnimController.UpdateWeaponAnimations();
-            }
         }
     }
 }

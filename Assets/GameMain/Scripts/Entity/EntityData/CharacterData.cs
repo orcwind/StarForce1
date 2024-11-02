@@ -25,10 +25,9 @@ namespace StarForce
         public string attack01 = "attack01";
         public string attack02 = "attack02";
         public string attack03 = "attack03";
+        public string attack04 = "attack04";
         //普攻三段
-        public string meleeAttack01 = "meleeAttack01";
-        public string meleeAttack02 = "meleeAttack02";
-        public string meleeAttack03 = "meleeAttack03";
+        
         //蓄力攻击中
         public string attackCharging = "attackCharging";
         //蓄力攻击释放

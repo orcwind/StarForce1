@@ -1,4 +1,4 @@
-﻿#,实体配置表,,,
+﻿#,Entity.csv,,,
 #,Id,,AssetName,BackgroundMusicId
 #,int,,string,int
 #,场景编号,策划备注,资源名称,背景音乐编号（没有就设置为0）

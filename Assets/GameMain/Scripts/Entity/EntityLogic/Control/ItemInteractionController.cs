@@ -21,13 +21,13 @@ namespace StarForce
 
 		public void InteractWithNearestItem()
 		{
-			Log.Info("尝试与最近的物品交互");
+			//Log.Info("尝试与最近的物品交互");
 			if (m_NearbyItems.Count > 0)
 			{
 				IInteractable nearestItem = GetNearestItem();
 				if (nearestItem != null)
 				{
-					Log.Info($"找到可交互物品: {nearestItem.GetType().Name}");
+					//Log.Info($"找到可交互物品: {nearestItem.GetType().Name}");
 					nearestItem.Interact(m_PlayerController);
 				}
 			}

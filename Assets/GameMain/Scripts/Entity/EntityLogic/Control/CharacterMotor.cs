@@ -31,7 +31,7 @@ namespace StarForce
        private Animation animation_m;
 
         [Header("移动")]
-        public float targetSpeed = 3f; //移动速度 
+        
         public float jumpHeight = 0.7f; //跳跃高度
         public float aSpeed = -15f; //重力加速度     
         private float velocity_Y=0;
@@ -76,6 +76,8 @@ namespace StarForce
         private Player m_Player;
 
         public bool IsInitialized { get; private set; }
+
+        private WeaponData m_CurrentWeaponData;
 
         private void Awake()
         {
@@ -223,7 +225,7 @@ namespace StarForce
             {
                 bool isMoving = moveDir.magnitude > 0.1f;
                 anim.SetBool(m_characterData.run, isMoving);
-                anim.SetFloat(m_characterData.speed, moveDir.magnitude);
+               // anim.SetFloat(m_characterData.speed, moveDir.magnitude);
             }
 
             // 更新朝向（只根据X轴方向）
@@ -330,6 +332,22 @@ namespace StarForce
                 Vector3 dropPosition = transform.position + (transform.right * faceDirection * 0.5f);
                 WeaponManager.Instance.SpawnWeaponOnGround(playerData.WeaponId, dropPosition);
                 playerData.WeaponId = 0;
+            }
+        }
+
+        public void OnWeaponChanged(WeaponData weaponData)
+        {
+            m_CurrentWeaponData = weaponData;
+            // 更新相关参数和动画
+            UpdateWeaponParameters();
+        }
+
+        private void UpdateWeaponParameters()
+        {
+            // 根据武器数据更新攻击参数
+            if (m_CurrentWeaponData != null)
+            {
+                // 更新攻击速度、范围等参数
             }
         }
     }

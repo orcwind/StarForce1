@@ -18,10 +18,9 @@ namespace StarForce
         private void LoadWeaponData(int weaponId)
         {
             // 这里修改，TypeId使用固定值100000（武器类型的EntityId）
-            const int WEAPON_TYPE_ID = 100000;
+            //const int WEAPON_TYPE_ID = 100000;
             WeaponData = new WeaponData(
-                GameEntry.Entity.GenerateSerialId(), // entityId
-                WEAPON_TYPE_ID,                      // typeId (固定值100000)
+                GameEntry.Entity.GenerateSerialId(), // entityId               
                 weaponId,                           // weaponId (具体武器的ID，如101010)
                 0,                                  // ownerId
                 CampType.Player                     // ownerCamp

@@ -56,7 +56,6 @@ namespace StarForce
 
 		private IEnumerator InitializeController()
 		{
-			// 等待CharacterMotor完全初始化
 			while (m_CharacterMotor == null || !m_CharacterMotor.IsInitialized)
 			{
 				yield return null;
