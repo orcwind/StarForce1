@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Common;
@@ -6,41 +6,71 @@ using UnityGameFramework.Editor.ResourceTools;
 using UnityGameFramework.Runtime;
 using GameFramework.Event;
 using System;
+using System.Linq;
 
 
 namespace StarForce.Skill
 {
     /// <summary>
-    /// ���ܹ���������ȡ�����б������ɼ���
+    /// ܹȡбɼ
     /// </summary>
     public class CharacterSKillManager : MonoBehaviour
     {
-        //��������
-        public AttackData[] skills;
+        [SerializeField]
+        public AttackData[] attacks;
+        [SerializeField]
         public CharacterData m_characterData;
+        [SerializeField]
         public Attack m_Attack;
-        
+        [SerializeField]
+        private int m_WeaponId;
+
         private void Start()
-        {
-            AttackData AD01 = new AttackData(GameEntry.Entity.GenerateSerialId(), 100110);
-            AttackData AD02 = new AttackData(GameEntry.Entity.GenerateSerialId(), 100111);
-            AttackData AD03 = new AttackData(GameEntry.Entity.GenerateSerialId(), 100112);
-            skills =new AttackData[3] {AD01,AD02,AD03 };
-          
-            for (int i = 0; i < skills.Length; i++)
-			{
-			 InitSkill(skills[i]);
-			}
-
-            //��ʱ��10011���ݲ���
-            m_characterData = new PlayerData(GameEntry.Entity.GenerateSerialId(), 10011);           
-           GameEntry.Event.Subscribe(ShowEntitySuccessEventArgs.EventId, OnShowAttackSuccess);
-
+        {   
+            m_characterData = GetComponent<Player>().PlayerData; 
+            if (m_characterData != null)
+            {
+                UpdateAttacks(m_characterData.WeaponId);
+            }
+            
+            // 订阅事件
+            GameEntry.Event.Subscribe(ShowEntitySuccessEventArgs.EventId, OnShowAttackSuccess);
+            GameEntry.Event.Subscribe(WeaponChangedEventArgs.EventId, OnWeaponChanged);
         }
 
+        private void OnDestroy()
+        {
+            GameEntry.Event.Unsubscribe(ShowEntitySuccessEventArgs.EventId, OnShowAttackSuccess);
+            GameEntry.Event.Unsubscribe(WeaponChangedEventArgs.EventId, OnWeaponChanged);
+        }
 
+        private void OnWeaponChanged(object sender, GameEventArgs e)
+        {
+            WeaponChangedEventArgs ne = (WeaponChangedEventArgs)e;
+            UpdateAttacks(ne.WeaponId);
+            Log.Info($"Weapon changed event received: WeaponId={ne.WeaponId}");
+        }
 
-        //��ʼ������
+        private void UpdateAttacks(int weaponId)
+        {
+            m_WeaponId = weaponId;
+            WeaponInfo weaponInfo = new WeaponInfo(m_WeaponId);
+            attacks = weaponInfo.GetAllAttacks().ToArray();
+            
+            if (attacks == null || attacks.Length == 0)
+            {
+                Log.Warning($"No attacks found for weapon {m_WeaponId}");
+                return;
+            }
+
+            foreach(AttackData data in attacks)
+            {
+                Log.Info($"Updated attack id: {data.TypeId} for weapon {m_WeaponId}");
+                InitSkill(data);
+            }
+        }
+
+        //ʼ
         private void InitSkill(AttackData data)
         {          
          // data.skillPrefab=Resources.Load<GameObject>("Skill/"+data.prefabName);
@@ -51,21 +81,27 @@ namespace StarForce.Skill
            
         } 
 
-        //׼�����ܣ��ж��Ƿ�����ͷ�����(��ȴ��������
+        //׼ܣжǷͷ(ȴ
         public AttackData PrepareSkill(int id)
         {
-           AttackData skillGo = skills.Find(s => s.TypeId == id);
-        
-         if (skillGo == null)
+            Debug.Log("prepare skill id is "+id);
+            foreach(AttackData data in attacks)
             {
-                print("skillgo is null");
+                Debug.Log("attack data id is "+data.TypeId);
+            }
+
+           AttackData attackGo = attacks.Find(s => s.TypeId == id);
+        
+         if (attackGo == null)
+            {
+                Debug.Log("attackGo is null");
                 return null;
             }
             else
          {            
               
-                if (skillGo != null && skillGo.CoolRemain <= 0)
-                    return skillGo;
+                if (attackGo != null && attackGo.CoolRemain <= 0)
+                    return attackGo;
                 else
                 {
                     Debug.Log("sillgo cannot cast");
@@ -73,57 +109,54 @@ namespace StarForce.Skill
             }
         }
 
-        //���ɼ���
+        //ɼ
         public IEnumerator GenerateSkill(AttackData data)
         {
-            if (m_Attack == null) 
-            {Debug.Log("attack is null");
-             yield break;
+            if (data == null)
+            {
+                Log.Error("AttackData is null");
+                yield break;
             }
-           // Debug.Log("3 m_attack name is " + m_Attack.name);
-            //��������
-            // GameObject skillGo= Instantiate(data.skillPrefab, transform.position, transform.rotation);
-            // GameObject skillGo = GameObjectPool.Instance.CreateObject(data.prefabName, data.skillPrefab, transform.position, transform.rotation);
-            AttackData TempattackData = new AttackData(GameEntry.Entity.GenerateSerialId(), data.TypeId);
-           // GameEntry.Entity.ShowAttack(TempattackData);
-           
-            yield return new WaitUntil(() => m_Attack != null);
+
+            // 创建新的攻击数据
+            AttackData tempAttackData = new AttackData(GameEntry.Entity.GenerateSerialId(), data.TypeId);
+            
+            // 显示攻击实体
+            GameEntry.Entity.ShowAttack(tempAttackData);
+            
+            // 等待攻击实体创建完成
+            float timeout = 5f;
+            float elapsed = 0f;
+            while (m_Attack == null && elapsed < timeout)
+            {
+                elapsed += Time.deltaTime;
+                yield return null;
+            }
 
             if (m_Attack == null)
-    {
-        Debug.LogError("m_Attack 仍然是 null，可能是 ShowAttack 没有正确设置");
-        yield break;
-    }
-
-    Debug.Log("2 m_attack name is " + m_Attack.name);
-          
-          
-            //string m_name = GameEntry.Entity.GetEntity(data.TypeId).gameObject.name;
-           // Debug.Log("m_name is " + m_name);
-                    
-            SkillDeployer deployer = m_Attack.GetComponent<SkillDeployer>();
-            if (deployer == null) 
-            
-            {Debug.Log("deployer is null");
-           yield break;
-            }
-             Debug.Log("deployer.name is "+ deployer.name);
-            for (int i = 0;i < data.ImpactType.Length;i++)
             {
-                Debug.Log(data.ImpactType[i]);
+                Log.Error($"Attack entity creation failed after {timeout} seconds");
+                yield break;
             }
-            //���ݼ������ݣ�ͬʱ��ʼ��deployer
-           deployer.SkillData = data;//�ڲ������㷨����
-         deployer.DeploySkill();//�ڲ�ִ���㷨����
 
-          //���ټ���  ----��ʱδʵ��
-          // Destroy(skillGo, data.durationTime);
-            //GameObjectPool.Instance.CollectObject(skillGo, data.durationTime);
+            Log.Info($"Attack entity created successfully: {m_Attack.name}");
 
-            //����������ȴ
+            // 获取并配置技能部署器
+            SkillDeployer deployer = m_Attack.GetComponent<SkillDeployer>();
+            if (deployer == null)
+            {
+                Log.Error("SkillDeployer component not found on Attack entity");
+                yield break;
+            }
+
+            // 配置技能部署器
+            deployer.AttackData = data;
+            deployer.DeploySkill();
+
+            // 启动冷却计时
             StartCoroutine(CoolTimeDown(data));
         }
-        //������ȴ����ʱ
+        //ȴʱ
         private IEnumerator CoolTimeDown(AttackData data)
         {
             data.CoolRemain = data.CoolTime;
@@ -136,17 +169,14 @@ namespace StarForce.Skill
         }
 
 
-                private void OnShowAttackSuccess(object sender, GameEventArgs e)
-        {
-            ShowEntitySuccessEventArgs ne = (ShowEntitySuccessEventArgs)e;
+         private void OnShowAttackSuccess(object sender, GameEventArgs e)
+         {
+               ShowEntitySuccessEventArgs ne = (ShowEntitySuccessEventArgs)e;
             if (ne.EntityLogicType == typeof(Attack))
-            {
-                m_Attack = (Attack)ne.Entity.Logic;
-                if (m_Attack == null)
-                {
-                    Debug.LogError("OnShowAttackSuccess: m_Attack 设置失败");
-                }
+         {
+             m_Attack = (Attack)ne.Entity.Logic;
+           Debug.Log($"Attack entity initialized: {m_Attack != null}");
             }
-        }
+        }   
     }
 }

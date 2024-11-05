@@ -147,7 +147,7 @@ namespace StarForce
             
             HP = m_MaxHP;
             m_SP = m_MaxSP;
-            m_WeaponId = 101020;
+            //m_WeaponId = 101020;
         }
 
 

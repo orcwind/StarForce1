@@ -21,6 +21,13 @@ namespace StarForce
         public WeaponData(int entityId, int typeId, int ownerId, CampType ownerCamp) 
             : base(entityId, typeId, ownerId, ownerCamp)
         {
+            if(typeId==0)
+            {
+                m_WeaponName = "空手";
+                m_WeaponDescription = "空手";
+                m_WeaponType = 0;
+                return;
+            }
             IDataTable<DRWeapon> dtWeapon = GameEntry.DataTable.GetDataTable<DRWeapon>();
             DRWeapon drWeapon = dtWeapon.GetDataRow(typeId);
             if (drWeapon != null)

@@ -103,7 +103,6 @@ namespace StarForce
                 return;
             }
 
-            // 获取 PlayerData
             PlayerData playerData = playerController.GetPlayerData();
             if (playerData == null)
             {
@@ -111,34 +110,30 @@ namespace StarForce
                 return;
             }
 
-            // 保存旧武器ID
+            // 保存旧武器ID用于掉落
             int oldWeaponId = playerData.WeaponId;
 
             // 更新 PlayerData 中的 WeaponId
             playerData.WeaponId = m_WeaponData.WeaponId;
             playerController.GetComponent<Player>().PlayerData.WeaponId = m_WeaponData.WeaponId;
 
-            Log.Info($"开始拾取武器: 地面武器ID={m_WeaponData.WeaponId}");
-            Log.Info($"更新后的武器ID={playerData.WeaponId}");
+            // 触发武器更换事件
+            GameEntry.Event.Fire(this, WeaponChangedEventArgs.Create(m_WeaponData.WeaponId));
+            Log.Info($"Weapon changed event fired: WeaponId={m_WeaponData.WeaponId}");
 
             // 更新动画控制器
             WeaponAnimationController weaponAnimController = playerController.GetComponentInChildren<WeaponAnimationController>();
             if (weaponAnimController != null)
             {
                 weaponAnimController.UpdateAnimationController(m_WeaponData.WeaponId);
-                Log.Info($"武器动画控制器更新完成: WeaponId={m_WeaponData.WeaponId}");
-            }
-            else
-            {
-                Log.Error("WeaponAnimationController not found on PlayerController");
             }
 
-            // 如果有旧武器，则掉落
+            // 处理旧武器掉落
             if (oldWeaponId != 0)
             {
                 Vector3 dropPosition = playerController.transform.position + playerController.transform.right * 0.5f;
                 WeaponManager.Instance.SpawnWeaponOnGround(oldWeaponId, dropPosition);
-                Log.Info($"掉落旧武器: WeaponId={oldWeaponId}, Position={dropPosition}");
+                Log.Info($"Old weapon dropped: WeaponId={oldWeaponId}, Position={dropPosition}");
             }
 
             GameEntry.Entity.HideEntity(this);

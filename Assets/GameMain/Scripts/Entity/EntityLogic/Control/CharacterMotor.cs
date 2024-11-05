@@ -5,6 +5,7 @@ using UnityEngine;
 using Common;
 using StarForce.Skill;
 using UnityGameFramework.Runtime; 
+using UnityEngine.Events;
 
 
 
@@ -93,6 +94,7 @@ namespace StarForce
             // 获取Character或Player组件
             m_Character = GetComponent<Character>();
             m_Player = GetComponent<Player>();
+           
 
             if (m_Character == null && m_Player == null)
             {
@@ -266,26 +268,28 @@ namespace StarForce
         private float lastPressTime = -1;
         internal void attack()
         {
+            int m_WeaponId=m_Player.PlayerData.WeaponId;
+           
             //攻击中取消攻击
             if (isAttack) return;
 
-            //暂定默认普通攻击id为1001
+            
             if (!isGround)
             {
-                skillSystem.AttackUseSkill(100110, false);
+                skillSystem.AttackUseSkill(m_WeaponId, false);
                 Debug.Log("use attack skill");
                 return;
             }
-            //翻滚后攻击暂定id为1001， 后期更改为翻滚攻击
+            //翻滚后攻击暂定id为weaponid， 后期更改为翻滚攻击
             if (isrolling)
             {
-                skillSystem.AttackUseSkill(100110, false); return;
+                skillSystem.AttackUseSkill(m_WeaponId, false); return;
             }
 
             float intervalTime = Time.time - lastPressTime;
             if (intervalTime < cancelAttackTime) return;
             bool isBatter = intervalTime < batterAttackTime;
-            skillSystem.AttackUseSkill(100110, isBatter);          
+            skillSystem.AttackUseSkill(m_WeaponId, isBatter);          
             lastPressTime = Time.time;
         }
 
@@ -322,6 +326,9 @@ namespace StarForce
                     DropCurrentWeapon();
                 }
                 playerData.WeaponId = weaponId;
+                
+                // 触发武器更换事件
+                GameEntry.Event.Fire(this, WeaponChangedEventArgs.Create(weaponId));
             }
         }
 

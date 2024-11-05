@@ -21,7 +21,7 @@ namespace StarForce.Skill
         private IEnumerator RepeatDamage(SkillDeployer deployer)
         {
             float atkTime = 0;
-            AttackData data = deployer.SkillData;
+            AttackData data = deployer.AttackData;
             do
             {
                 OnceDamage(data);
@@ -34,7 +34,7 @@ namespace StarForce.Skill
         }
         private void OnceDamage(AttackData data)
         {
-            //¼¼ÄÜÊµ¼Ê¹¥»÷Á¦
+            //ï¿½ï¿½ï¿½ï¿½Êµï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½
             //  float atk = data.atkRatio * data.SkillOwner.GetComponent<CharacterStatus>().baseATK + data.atkDamage;
             AttackData tempAttackData = data.SkillOwner.GetComponent<CharacterSKillManager>().m_Attack.m_AttackData;
             float atk=tempAttackData.AtkDamage;
@@ -44,11 +44,12 @@ namespace StarForce.Skill
                 //var status = data.AttackTargets[i].GetComponent<CharacterStatus>();
                 //status.Damage(atk);
 
-                CharacterData tempData = data.AttackTargets[i].GetComponent<CharacterSKillManager>().m_characterData;
+                CharacterData tempData = data.AttackTargets[i].
+                GetComponent<CharacterSKillManager>().m_characterData;
                 
                // tempData.Damage(atk);
             }
-            //´´½¨¹¥»÷ÌØÐÔ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         }
     }
 

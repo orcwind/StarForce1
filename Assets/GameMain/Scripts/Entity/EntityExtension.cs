@@ -54,6 +54,10 @@ namespace StarForce
         {
             entityComponent.ShowEntity(typeof(Background), "Background", Constant.AssetPriority.BackgroundAsset, data);
         }
+    public static void ShowAttack(this EntityComponent entityComponent, AttackData data)
+{
+     entityComponent.ShowEntity(typeof(Attack), "Attack", Constant.AssetPriority.AttackAsset, data);
+}
 
         // public static void ShowAttack(this EntityComponent entityComponent, AttackData data)
         // {

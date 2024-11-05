@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using GameFramework.DataTable;
 using UnityGameFramework.Runtime;
 
@@ -52,6 +53,11 @@ namespace StarForce
         public IEnumerable<AttackData> GetAllAttacks()
         {
             return m_AttackDataDict.Values;
+        }
+
+        public AttackData[] GetAttackDataArray()
+        {
+            return m_AttackDataDict.Values.ToArray();
         }
     }
 }

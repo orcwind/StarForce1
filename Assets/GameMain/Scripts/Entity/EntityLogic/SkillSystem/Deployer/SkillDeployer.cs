@@ -6,33 +6,33 @@ using UnityEngine;
 namespace StarForce.Skill
 {
     /// <summary>
-    /// ¼¼ÄÜÊÍ·ÅÆ÷
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½
     /// </summary>
     public abstract class SkillDeployer : MonoBehaviour
     {
-        private AttackData skillData;
+        private AttackData attackData;
        // private string projectName= "SunnyLandTest";
-        public AttackData SkillData
+        public AttackData AttackData
         {
-            get { return skillData; }
+            get { return attackData; }
             set
             {
-                skillData = value;
+                attackData = value;
                 InitDeployer();
             }
         }
-        //Ñ¡ÇøËã·¨¶ÔÏó
+        //Ñ¡ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½
        private IAttackSelector selector;
        private IImpactEffect[] impactArray;
         private void InitDeployer()
         {
            // string className = string.Format("{0}.Skill.{1}AttackSelector",projectName, skillData.selectorType);      
-            selector = DeployerConfigFactory.CreateAttackSelector(SkillData);
-            impactArray = DeployerConfigFactory.CreateImpactEffects(SkillData);
+            selector = DeployerConfigFactory.CreateAttackSelector(attackData);
+            impactArray = DeployerConfigFactory.CreateImpactEffects(attackData);
           
 
         }
-        //Ñ¡Çø IAttackSelector
+        //Ñ¡ï¿½ï¿½ IAttackSelector
         public void CalculateTargets()
         {
         // skillData.attackTargets= selector.SelectTarget(skillData, transform);
@@ -43,8 +43,8 @@ namespace StarForce.Skill
              
         }
 
-        //ÊÍ·Å·½Ê½
-        //¹©¼¼ÄÜ¹ÜÀíÆ÷µ÷ÓÃ£¬ÓÉ×ÓÀàÊµÏÖ£¬¶¨Òå¾ßÌå²ßÂÔ
+        //ï¿½Í·Å·ï¿½Ê½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public abstract void DeploySkill();
         
         public void ImpactTarget()

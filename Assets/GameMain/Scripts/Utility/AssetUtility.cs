@@ -60,5 +60,12 @@ namespace StarForce
         {
             return Utility.Text.Format("Assets/GameMain/UI/UISounds/{0}.wav", assetName);
         }
+
+        public static string GetAttackAsset(string assetName)
+        {
+            return string.IsNullOrEmpty(assetName) 
+                ? string.Empty 
+                : $"Assets/GameMain/Entities/Attack/{assetName}.prefab";
+        }
     }
 }

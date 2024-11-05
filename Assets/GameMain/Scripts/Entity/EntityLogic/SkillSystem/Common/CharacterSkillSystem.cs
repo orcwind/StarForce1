@@ -8,13 +8,13 @@ namespace StarForce.Skill
 {
     [RequireComponent(typeof(CharacterSKillManager))]
 /// <summary>
-/// ��װ����ϵͳ���ṩ�򵥵ļ����ͷŹ���
+/// 封装技能系统，提供技能的生成和使用
 /// </summary>
 public class CharacterSkillSystem : MonoBehaviour
 {
         private CharacterSKillManager skillManager;
         private Animator anim;
-        private AttackData skill;
+        public AttackData attack;
         private IAttackSelector selector;
         private AnimationEventBehaviour animEventBehaviour;
 
@@ -26,26 +26,34 @@ public class CharacterSkillSystem : MonoBehaviour
             animEventBehaviour.AttackHandler += DeploySkill;
         }
 
+        /// <summary>
+        /// 部署技能
+        /// </summary>
         private void DeploySkill()
         {
-            Debug.Log("skill assetNmae is " + skill.AssetName);
-            StartCoroutine( skillManager.GenerateSkill(skill));
+            Debug.Log("skill assetNmae is " + attack.AssetName);
+            StartCoroutine( skillManager.GenerateSkill(attack));
         }
 
         /// <summary>
-        /// Ϊ����ṩ
+        /// 使用技能
         /// </summary>
-        public void AttackUseSkill(int skillID,bool isBatter=false)
+        public void AttackUseSkill(int attackID,bool isBatter=false)
         {
-            if (skill!=null && isBatter)
-                skillID = skill.NextBatterID;          
+            if (attack!=null && isBatter)
+                attackID = attack.NextBatterID;          
 
-            //׼������
-            skill = skillManager.PrepareSkill(skillID);
-            if (skill == null) return;
+            //准备技能
+            attack = skillManager.PrepareSkill(attackID);
+            if (attack == null) return;
               //���Ŷ���
 
-            anim.SetBool(skill.AnimationName, true);
+             anim.SetBool(attack.AnimParaName, true);
+    Debug.Log($"Setting animation parameter: {attack.AnimParaName} to true");
+    
+    bool isAttack = anim.GetBool(attack.AnimParaName);
+    Debug.Log($"Animation parameter {attack.AnimParaName} is set to: {isAttack}");
+            
 
            // Transform tf = transform.FindChildByName("AttackArea");
 
@@ -76,7 +84,7 @@ public class CharacterSkillSystem : MonoBehaviour
         public Transform selectedTarget; 
         private Transform SelectTarget()
         {
-            Transform[] target = new SectorAttackSelector().SelectTarget(skill, transform);
+            Transform[] target = new SectorAttackSelector().SelectTarget(attack, transform);
           //  return target.Length != 0 ? target[0] : null;
             return target !=null ? target[0] : null;
         }
@@ -87,13 +95,14 @@ public class CharacterSkillSystem : MonoBehaviour
             if (selected) selected.SetSelectedActive(state);
         }
         /// <summary>
-        /// ʹ��������ܣ�ΪNPC�ṩ��
+        /// 使用随机技能，为NPC提供
         /// </summary>
         public void UseRandomSkill()
         {
-           // ���󣺴ӹ���������ѡ������ļ���
-             //��ɸѡ�����п����ͷŵļ��ܣ��ٲ��������
-             var usableSkills = skillManager.skills.FindAll(s => skillManager.PrepareSkill(s.Id) != null);
+       //从技能管理器中找到所有可用的技能，并存储在usableSkills数组中，
+       //产生一个随机数，随机数范围为0到usableSkills数组的长度，然后使用AttackUseSkill方法使用随机数对应的技能
+             var usableSkills = skillManager.attacks.FindAll(s => 
+             skillManager.PrepareSkill(s.Id) != null);
             if (usableSkills.Length <= 0) return;
             int randomValue = Random.Range(0, usableSkills.Length);
             AttackUseSkill(usableSkills[randomValue].Id);

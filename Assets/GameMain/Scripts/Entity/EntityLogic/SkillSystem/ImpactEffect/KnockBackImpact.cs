@@ -9,7 +9,7 @@ using UnityEngine;
 namespace StarForce.Skill
 {
 /// <summary>
-/// »÷ÍËÐ§¹û
+/// ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
 /// </summary>
     public class KnockBackImpact:IImpactEffect
     {
@@ -19,7 +19,7 @@ namespace StarForce.Skill
         public void Execute(SkillDeployer deployer)
         {
 
-            AttackData data = deployer.SkillData;
+            AttackData data = deployer.AttackData;
 
             float kbdistance = data.KnockBackDistance;
             if (data.AttackTargetTags == null) return;
