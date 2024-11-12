@@ -18,11 +18,19 @@ namespace StarForce
 
         private Vector3 m_TargetPosition = Vector3.zero;
 
+        private BoxCollider2D bodyCollider;
+
         public override void Death()
         {
-
-            GetComponentInChildren<Animator>().SetBool(m_EnemyData. death, true);
-            print("Enemy is Dead ");
+            if (m_EnemyData != null)
+            {
+                var animator = GetComponentInChildren<Animator>();
+                if (animator != null)
+                {
+                    animator.SetBool(m_EnemyData.death, true);
+                }
+                Log.Info($"Enemy {gameObject.name} is Dead");
+            }
         }
 
 #if UNITY_2017_3_OR_NEWER
@@ -31,7 +39,35 @@ namespace StarForce
         protected internal override void OnInit(object userData)
 #endif
         {
+            Log.Info($"Enemy OnInit Start: {(userData != null ? "userData valid" : "userData null")}");
+            
             base.OnInit(userData);
+
+            Log.Info($"Enemy GameObject name: {gameObject.name}");
+           // Log.Info($"Enemy Transform hierarchy: {transform.GetHierarchyPath()}");
+
+            // 延迟获取碰撞器，等待预制件完全加载
+            if (bodyCollider == null)
+            {
+                // 先检查当前物体
+                bodyCollider = GetComponent<BoxCollider2D>();
+                
+                // 如果当前物体没有，再查找子物体
+                if (bodyCollider == null)
+                {
+                    Transform colliderTransform = transform.Find("BodyCollider");
+                    if (colliderTransform != null)
+                    {
+                        bodyCollider = colliderTransform.GetComponent<BoxCollider2D>();
+                    }
+                }
+            }
+
+            // 记录错误但不中断执行
+            if (bodyCollider == null)
+            {
+                Log.Warning($"Cannot find BodyCollider on enemy {gameObject.name}");
+            }
         }
 
 #if UNITY_2017_3_OR_NEWER
@@ -45,20 +81,35 @@ namespace StarForce
             m_EnemyData = userData as EnemyData;
             if (m_EnemyData == null)
             {
-                Log.Error("Player data is invalid.");
+                Log.Error($"Enemy data is invalid for {gameObject.name}");
                 return;
             }
-            #region
-            //ScrollableBackground sceneBackground = FindObjectOfType<ScrollableBackground>();
-            //if (sceneBackground == null)
-            //{
-            //    Log.Warning("Can not find scene background.");
-            //    return;
-            //}
 
-            //m_PlayerMoveBoundary = new Rect(sceneBackground.PlayerMoveBoundary.bounds.min.x, sceneBackground.PlayerMoveBoundary.bounds.min.z,
-            //    sceneBackground.PlayerMoveBoundary.bounds.size.x, sceneBackground.PlayerMoveBoundary.bounds.size.z);
-            #endregion
+            // 确保碰撞器处于激活状态
+            if (bodyCollider != null)
+            {
+                bodyCollider.enabled = true;
+            }
+        
+            // 注册到EnemyManager
+            EnemyManager.Instance.RegisterEnemy(this);
+        }
+
+#if UNITY_2017_3_OR_NEWER
+        protected override void OnHide(bool isShutdown, object userData)
+#else
+        protected internal override void OnHide(bool isShutdown, object userData)
+#endif
+        {
+            // 从EnemyManager注销
+            EnemyManager.Instance.UnregisterEnemy(this);
+            
+            if (bodyCollider != null)
+            {
+                bodyCollider.enabled = false;
+            }
+
+            base.OnHide(isShutdown, userData);
         }
 
 #if UNITY_2017_3_OR_NEWER
@@ -99,19 +150,28 @@ namespace StarForce
 
         public override void Damage(float damageVal)
         {
-
             base.Damage(damageVal);
 
-            GetComponentInChildren<Animator>().SetTrigger(m_EnemyData. hurt);
+            if (m_EnemyData != null)
+            {
+                var animator = GetComponentInChildren<Animator>();
+                if (animator != null)
+                {
+                    animator.SetTrigger(m_EnemyData.hurt);
+                }
 
-            //设置初始伤害显示位置偏移
-            Vector3 offset = new Vector3(0, 1f, 0);
+                // 设置初始伤害显示位置偏移
+                Vector3 offset = new Vector3(0, 1f, 0);
 
-            //生成伤害显示
-            GameObject ob = GameObjectPool.Instance.CreateObject("damageValue", m_EnemyData.damageDisplayPre, this.transform.position + offset, Quaternion.identity);
-            //文本内容用伤害值替换
-            // ob.GetComponent<DamageDisplay>().text.text= damageVal.ToString();
-            //print("MonsterStatus OnDamage ");
+                // 生成伤害显示
+                if (m_EnemyData.damageDisplayPre != null)
+                {
+                    GameObject ob = GameObjectPool.Instance.CreateObject("damageValue", 
+                        m_EnemyData.damageDisplayPre, 
+                        transform.position + offset, 
+                        Quaternion.identity);
+                }
+            }
         }
     }
 }

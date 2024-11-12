@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Common;
+using UnityGameFramework.Runtime;
 
 
 namespace StarForce.Skill
@@ -12,74 +13,39 @@ namespace StarForce.Skill
 /// </summary>
 public class CharacterSkillSystem : MonoBehaviour
 {
-        private CharacterSKillManager skillManager;
+        public CharacterSKillManager skillManager;
         private Animator anim;
-        public AttackData attack;
+        private AttackData attack;
         private IAttackSelector selector;
-        private AnimationEventBehaviour animEventBehaviour;
+       // private AnimationEventBehaviour animEventBehaviour;
+       
+        public Player player;
+
+        private AttackData currentAttackData = null; // 保存当前/上一次的攻击数据
 
         private void Start()
         {
             skillManager = GetComponent<CharacterSKillManager>();
             anim = GetComponentInChildren<Animator>();
-            animEventBehaviour = GetComponentInChildren<AnimationEventBehaviour>();
-            animEventBehaviour.AttackHandler += DeploySkill;
+            GetComponentInChildren<AnimationEventBehaviour>().AttackHandler += DeploySkill;
+            player = GetComponent<Player>();
         }
 
         /// <summary>
         /// 部署技能
         /// </summary>
         private void DeploySkill()
+        {  
+            if (currentAttackData != null)
         {
-            Debug.Log("skill assetNmae is " + attack.AssetName);
-            StartCoroutine( skillManager.GenerateSkill(attack));
+            skillManager.GenerateSkill(currentAttackData);
+        }
         }
 
         /// <summary>
         /// 使用技能
         /// </summary>
-        public void AttackUseSkill(int attackID,bool isBatter=false)
-        {
-            if (attack!=null && isBatter)
-                attackID = attack.NextBatterID;          
-
-            //准备技能
-            attack = skillManager.PrepareSkill(attackID);
-            if (attack == null) return;
-              //���Ŷ���
-
-             anim.SetBool(attack.AnimParaName, true);
-    Debug.Log($"Setting animation parameter: {attack.AnimParaName} to true");
-    
-    bool isAttack = anim.GetBool(attack.AnimParaName);
-    Debug.Log($"Animation parameter {attack.AnimParaName} is set to: {isAttack}");
-            
-
-           // Transform tf = transform.FindChildByName("AttackArea");
-
-            //***********����������е�Ŀ��
-           // tf.GetComponent<AttackCollider>()?.targets.Clear();
-            //����Ŀ��
-           // Transform targetTF = SelectTarget();
-                       
-            //�������
-           // if (skill.attackType != SkillAttackType.Single || targetTF==null) return ;
-
-            #region ����Ŀ�� ѡ��Ŀ��
-            //����Ŀ�� ѡ��Ŀ��
-           // ����Ŀ��
-           // transform.LookAt(targetTF);
-            //����Ŀ��
-            //ѡ��Ŀ��
-            //1. ѡ��Ŀ�꣬���ָ��ʱ���ȡ��ѡ��
-            //2. ѡ��AĿ�꣬���Զ�ȡ��ǰ����ѡ��BĿ�꣬����Ҫ�ֶ���Aȡ��
-            // ����˼�룺 �洢�ϴ�ѡ���Ŀ��
-            //��ȡ���ϴ�ѡ�е�����
-            //SetSelectedActiveFx(false);
-            //selectedTarget = targetTF;
-            //SetSelectedActiveFx(true);
-            #endregion
-        }
+   
         [HideInInspector]
         public Transform selectedTarget; 
         private Transform SelectTarget()
@@ -109,6 +75,59 @@ public class CharacterSkillSystem : MonoBehaviour
         }
       
 
+        private void OnDestroy()
+        {
+            // 确保在销毁时清理所有技能实体
+            if (skillManager != null && skillManager.m_Attack != null)
+            {
+                GameEntry.Entity.HideEntity(skillManager.m_Attack.Entity);
+            }
+        }
 
+        public void AttackUseSkill(int weaponId, bool isBatter = false)
+        {
+            AttackData newAttack;
+            
+            if (!isBatter || currentAttackData == null)
+            {
+                // 第一次攻击，使用weaponId
+                newAttack = skillManager.PrepareSkill(weaponId);
+                Log.Info($"First attack with WeaponId: {weaponId}");
+            }
+            else 
+            {
+                // 连击，使用上一次攻击的NextBatterID
+                int nextAttackId = currentAttackData.NextBatterID;
+                if (nextAttackId <= 0)
+                {
+                    Log.Warning($"No next batter attack for AttackId: {currentAttackData.AttackId}");
+                    return;
+                }
+                newAttack = skillManager.PrepareSkill(nextAttackId);
+                Log.Info($"Batter attack: {currentAttackData.AttackId} -> {nextAttackId}");
+            }
+
+            if (newAttack == null)
+            {
+                Log.Error("Failed to prepare attack data");
+                return;
+            }
+
+            // 保存这次的攻击数据，供下次连击使用
+            currentAttackData = newAttack;
+            
+            // 播放动画
+            if (anim != null)
+            {
+                anim.SetBool(currentAttackData.AnimParaName, true);
+            }
+        }
+
+        // 在适当时机重置攻击状态
+        public void ResetAttackState()
+        {
+            currentAttackData = null;
+           // lastPressTime = -1f;
+        }
 }
 }

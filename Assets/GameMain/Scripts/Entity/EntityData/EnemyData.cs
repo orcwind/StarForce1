@@ -17,22 +17,13 @@ namespace StarForce
         /// <summary>
         /// 贡献经验值
         /// </summary>
-        public int GiveExp;
+         public int GiveExp { get; private set; }
 
-        public EnemyData(int entityId, int typeId, CampType camp) : base(entityId, typeId, camp)
+        public EnemyData(int entityId, int typeId) : base(entityId, typeId, CampType.Enemy)
         {
+
+            GiveExp = 100;
         }
-
-      
-
-
-        // public float beAttackedSpeed;//被攻击后移动距离
-        //private Vector2 direction;
-        //private bool isHit;
-
-
-
-
 
 
     }

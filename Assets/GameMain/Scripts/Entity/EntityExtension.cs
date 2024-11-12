@@ -8,6 +8,7 @@
 using GameFramework.DataTable;
 using System;
 using UnityGameFramework.Runtime;
+using UnityEngine;
 
 namespace StarForce
 {
@@ -54,11 +55,17 @@ namespace StarForce
         {
             entityComponent.ShowEntity(typeof(Background), "Background", Constant.AssetPriority.BackgroundAsset, data);
         }
-    public static void ShowAttack(this EntityComponent entityComponent, AttackData data)
+ public static void ShowAttack(this EntityComponent entityComponent, AttackData data)
 {
-     entityComponent.ShowEntity(typeof(Attack), "Attack", Constant.AssetPriority.AttackAsset, data);
-}
+    if (data == null)
+    {
+        Log.Error("AttackData is null");
+        return;
+    }
 
+    // 使用已有的私有方法 ShowEntity，它会处理资源加载和实体创建
+    ShowEntity(entityComponent, typeof(Attack), "Attack", Constant.AssetPriority.AttackAsset, data);
+}
         // public static void ShowAttack(this EntityComponent entityComponent, AttackData data)
         // {
         //     entityComponent.ShowEntity(typeof(Attack), "Attack", Constant.AssetPriority.AttackAsset, data);
@@ -71,6 +78,11 @@ namespace StarForce
 public static void ShowGroundWeapon(this EntityComponent entityComponent, GroundWeaponData data)
 {
     entityComponent.ShowEntity(typeof(GroundWeapon), "GroundWeapon", Constant.AssetPriority.GroundWeaponAsset, data);
+}
+
+public static void ShowEnemy(this EntityComponent entityComponent, EnemyData data)
+{
+    entityComponent.ShowEntity(typeof(Enemy), "Enemy", Constant.AssetPriority.EnemyAsset, data);
 }
         //public static void ShowMyAircraft(this EntityComponent entityComponent, MyAircraftData data)
         //{

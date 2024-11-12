@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityGameFramework.Runtime;
 namespace Common
 {
     /// <summary>
@@ -38,12 +39,13 @@ namespace Common
         /// </summary>
         public void OnAttack()
         {
-
-            AttackHandler?.Invoke();
-
+                     
+                AttackHandler?.Invoke();
+            
+         
         }
 
-        
+       
     }
 
     

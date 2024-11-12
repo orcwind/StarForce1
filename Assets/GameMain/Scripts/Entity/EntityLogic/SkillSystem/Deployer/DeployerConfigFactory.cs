@@ -6,7 +6,7 @@ using UnityEngine;
 namespace StarForce.Skill
 {
 /// <summary>
-/// ÊÍ·ÅÆ÷ÅäÖÃ¹¤³§
+/// ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½
 /// </summary>
     public class DeployerConfigFactory
     {
@@ -18,19 +18,20 @@ namespace StarForce.Skill
         }
         public static IAttackSelector CreateAttackSelector(AttackData data)
         {
-            //´´½¨Ëã·¨¶ÔÏó
-            //¶¨ÒåÑ¡Çø¶ÔÏóÃüÃû¹æÔò£º
-            //ARPGTest.Skill.+Ã¶¾ÙÃû+AttackSelector
-            //ÀýÈçÉÈÐÎÑ¡Çø£ºARPGTest.Skill.SectorAttackSelector
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½
+            //ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            //ARPGTest.Skill.+Ã¶ï¿½ï¿½ï¿½ï¿½+AttackSelector
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ARPGTest.Skill.SectorAttackSelector
            string className = string.Format("{0}.Skill.{1}AttackSelector",projectName, data.SelectorType);
             return CreateObject<IAttackSelector>(className);
         }
 
         public static IImpactEffect[] CreateImpactEffects(AttackData data)
         {
-            //¶¨ÒåÓ°ÏìÐ§¹ûÃüÃû¹æÔò£º
+            //ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             //ARPGTest.Skill.+impactType[?]+Impact
-            //ÀýÈçcostSPÑ¡Çø£ºARPGTest.Skill.CostSPImpact
+            //ï¿½ï¿½ï¿½ï¿½costSPÑ¡ï¿½ï¿½ï¿½ï¿½ARPGTest.Skill.CostSPImpact
+         
             IImpactEffect[] impactArray = new IImpactEffect[data.ImpactType.Length];
             for (int i = 0; i < data.ImpactType.Length; i++)
             {

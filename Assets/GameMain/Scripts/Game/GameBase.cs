@@ -35,7 +35,8 @@ namespace StarForce
         public int heroID = 10011;
 
        // public int weaponID = 101010;
-        public string m_name = "RedHeroKnight_Sword";
+        //public string m_name = "RedHeroKnight_Sword";
+         public string m_name = "abc";
 
         public virtual void Initialize()
         {

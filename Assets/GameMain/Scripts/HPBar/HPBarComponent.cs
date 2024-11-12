@@ -14,6 +14,7 @@ namespace StarForce
 {
     public class HPBarComponent : GameFrameworkComponent
     {
+        
         //[SerializeField]
         //private HPBarItem m_HPBarItemTemplate = null;
 
@@ -27,8 +28,8 @@ namespace StarForce
         //private List<HPBarItem> m_ActiveHPBarItems = null;
         //private Canvas m_CachedCanvas = null;
 
-        //private void Start()
-        //{
+        // private void Start()
+        // {
         //    if (m_HPBarInstanceRoot == null)
         //    {
         //        Log.Error("You must set HP bar instance root first.");
@@ -39,7 +40,7 @@ namespace StarForce
         //    m_HPBarItemObjectPool = GameEntry.ObjectPool.CreateSingleSpawnObjectPool<HPBarItemObject>("HPBarItem", 
         //        m_InstancePoolCapacity);
         //    m_ActiveHPBarItems = new List<HPBarItem>();
-        //}
+        // }
 
         //private void OnDestroy()
         //{

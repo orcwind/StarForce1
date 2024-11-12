@@ -40,7 +40,8 @@ namespace StarForce
             var drAttacks = dtAttack.GetDataRows(a => a.WeaponId == weaponId);
             foreach (var drAttack in drAttacks)
             {
-                AttackData attackData = new AttackData(GameEntry.Entity.GenerateSerialId(), drAttack.Id);
+                AttackData attackData = new AttackData(GameEntry.Entity.GenerateSerialId(), 
+                drAttack.Id);
                 m_AttackDataDict.Add(drAttack.AttackId, attackData);
             }
         }

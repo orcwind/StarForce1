@@ -117,7 +117,9 @@ namespace StarForce
                 m_AttackId = drAttack.AttackId;
                 m_AtkInterval = drAttack.AtkInterval;
                 m_WeaponId = drAttack.WeaponId;
+
             }
+            m_ImpactType = new string[0];
         }
 
         public string[] ImpactType

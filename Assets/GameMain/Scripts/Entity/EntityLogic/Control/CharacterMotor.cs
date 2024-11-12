@@ -44,6 +44,7 @@ namespace StarForce
         private int avaiableJumpCount ;
         public  int defaultJumpCount = 1;
         private float chargingSpeedRate=0.5f;
+        public float targetSpeed = 3f; // 目标移动速度
 
         public bool  isGround=true; //是否在地面
         public bool isrolling=false; //是否翻滚状态
@@ -204,13 +205,21 @@ namespace StarForce
                 return;
             }
 
+ if (isrolling) return;
             // 如果正在攻击或翻滚，不执行移动
-            if (isAttack || isrolling)
+            //攻击时速度
+            if (isAttack  && isGround)
             {
-                rb.velocity = Vector2.zero;
-                return;
+                rb.velocity = moveDir * targetSpeed * 50 * Time.fixedDeltaTime*atkMoveSpeed;return;
             }
 
+           //蓄力时速度
+            if (isCharging && isGround)
+            {
+                rb.velocity = moveDir * targetSpeed * 50 * Time.fixedDeltaTime * chargingSpeedRate; return;
+            }
+
+             if(isChargingRelease)return;
             // 计算移动速度
             float moveSpeed = m_characterData.MoveSpeed;
             
@@ -289,7 +298,8 @@ namespace StarForce
             float intervalTime = Time.time - lastPressTime;
             if (intervalTime < cancelAttackTime) return;
             bool isBatter = intervalTime < batterAttackTime;
-            skillSystem.AttackUseSkill(m_WeaponId, isBatter);          
+            skillSystem.AttackUseSkill(m_WeaponId, isBatter);    
+            Debug.Log("#####attackUseSkill is called +"+m_WeaponId);      
             lastPressTime = Time.time;
         }
 

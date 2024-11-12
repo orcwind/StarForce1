@@ -5,8 +5,8 @@
 ,10011,红英雄剑,RedHeroKnight_Sword,1
 ,10012,红英雄斧,RedHeroKnight_Axe,1
 ,10021,黑英雄剑,BlackHeroKnight_Sword,1
-,20001, 敌人,Enemy,2
-,101010,近战武器1,BronzeSword,1
+,20001,黑骑士,BlackKnight,2
+,101010,近战武器1,MeleeWeapon01,1
 ,101020,近战武器2,FireSpear,1
 ,101030,近战武器3,MountainAxe,1
 ,102010,近战武器4,QiankunCircle,1

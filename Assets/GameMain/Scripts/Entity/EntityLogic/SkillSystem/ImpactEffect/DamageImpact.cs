@@ -44,8 +44,8 @@ namespace StarForce.Skill
                 //var status = data.AttackTargets[i].GetComponent<CharacterStatus>();
                 //status.Damage(atk);
 
-                CharacterData tempData = data.AttackTargets[i].
-                GetComponent<CharacterSKillManager>().m_characterData;
+                // CharacterData tempData = data.AttackTargets[i].
+                // GetComponent<CharacterSKillManager>().m_characterData;
                 
                // tempData.Damage(atk);
             }

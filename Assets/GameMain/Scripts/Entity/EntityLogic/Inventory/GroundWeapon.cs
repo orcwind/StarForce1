@@ -3,6 +3,7 @@ using UnityGameFramework.Runtime;
 //using GameFramework.UI;
 using GameFramework.Event;
 using GameFramework.DataTable;
+using StarForce.Skill;
 
 namespace StarForce
 {
@@ -116,6 +117,18 @@ namespace StarForce
             // 更新 PlayerData 中的 WeaponId
             playerData.WeaponId = m_WeaponData.WeaponId;
             playerController.GetComponent<Player>().PlayerData.WeaponId = m_WeaponData.WeaponId;
+
+            // 获取并更新 CharacterSKillManager
+            CharacterSKillManager skillManager = playerController.GetComponent<CharacterSKillManager>();
+            if (skillManager != null)
+            {
+                skillManager.UpdateAttacks(m_WeaponData.WeaponId);
+                Log.Info($"Updated attacks for weapon: {m_WeaponData.WeaponId}");
+            }
+            else
+            {
+                Log.Error("CharacterSKillManager not found on player");
+            }
 
             // 触发武器更换事件
             GameEntry.Event.Fire(this, WeaponChangedEventArgs.Create(m_WeaponData.WeaponId));
