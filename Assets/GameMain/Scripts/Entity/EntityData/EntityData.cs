@@ -51,6 +51,10 @@ namespace StarForce
             {
                 return m_TypeId;
             }
+            protected set
+            {
+                m_TypeId = value;
+            }
         }
 
         /// <summary>

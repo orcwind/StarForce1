@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2024-10-17 08:54:36.550
+// 生成时间：2024-11-22 14:10:54.780
 //------------------------------------------------------------
 
 using GameFramework;
@@ -19,7 +19,7 @@ using UnityGameFramework.Runtime;
 namespace StarForce
 {
     /// <summary>
-    /// 武器配置表。
+    /// weapon.csv。
     /// </summary>
     public class DRWeapon : DataRowBase
     {
@@ -55,7 +55,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 获取武器类型(0:近战。
+        /// 获取武器类型(1:近战 2远程，3其他）。
         /// </summary>
         public int WeaponType
         {

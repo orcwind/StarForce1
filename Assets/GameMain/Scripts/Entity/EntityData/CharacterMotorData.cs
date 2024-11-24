@@ -272,14 +272,14 @@ namespace StarForce.Skill
             isGround = childTransform.position.y <= transform.position.y + 0.05f ? true : false;
             m_faceDirection = transform.rotation.y == 0 ? 1 : -1;
             isAttack = controller.isAttacking;
-            isChargingRelease = anim.GetBool(m_characterData. attackChargeDown);
+            isChargingRelease = anim.GetBool(m_characterData. AnimParams.attackChargeDown);
         }
 
         public void Roll()
         {
             //空中或翻滚中或攻击中取消翻滚
             if (!isGround || isrolling || isAttack || isCharging || isChargingRelease) return;
-            anim.SetTrigger(m_characterData. roll);
+            anim.SetTrigger(m_characterData. AnimParams.roll);
             Vector3 target = new Vector3(transform.position.x + m_faceDirection * RollDistance, transform.position.y);
             StartCoroutine(rollForward(target, m_faceDirection));
             isrolling = false;
@@ -329,7 +329,7 @@ namespace StarForce.Skill
             //{ anim.SetBool(status. run, false); return; }
             if (Vector2.SqrMagnitude(rb.velocity) >= 0.1f)
 
-                anim.SetBool(m_characterData. run, true);
+                anim.SetBool(m_characterData. AnimParams.run, true);
 
 
             if (rb.velocity.x >= 0.01f)
@@ -396,7 +396,7 @@ namespace StarForce.Skill
         //蓄力普攻，播放动画，设置蓄力状态
         internal void charging()
         {
-            anim.SetBool(m_characterData. attackCharging, true);
+            anim.SetBool(m_characterData. AnimParams.attackCharging, true);
             isCharging = true;
             //GetComponent<Animation>()["attackCharging"].wrapMode = WrapMode.ClampForever;
         }
@@ -404,8 +404,8 @@ namespace StarForce.Skill
         //蓄力普攻释放，播放动画，设置蓄力状态结束
         internal void attackChargeRelease()
         {
-            anim.SetBool(m_characterData. attackCharging, false);
-            anim.SetBool(m_characterData. attackChargeDown, true);
+            anim.SetBool(m_characterData. AnimParams.attackCharging, false);
+            anim.SetBool(m_characterData. AnimParams.attackChargeDown, true);
             isCharging = false;
         }
 

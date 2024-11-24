@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2845523867783004759}
   - component: {fileID: 8644435122593950463}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: BodyCollider
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020399988, y: 0.33979172}
+  m_Offset: {x: -0.032454878, y: 0.33979172}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32679975, y: 0.6187831}
+  m_Size: {x: 0.41922075, y: 0.6187831}
   m_EdgeRadius: 0
 --- !u!1 &484319177383658279
 GameObject:
@@ -69,9 +69,9 @@ GameObject:
   - component: {fileID: 6166753756986376624}
   - component: {fileID: 8614070246404501203}
   - component: {fileID: 286487850627938784}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,9 +186,9 @@ GameObject:
   - component: {fileID: 5691088093430914357}
   - component: {fileID: 5960767994520127872}
   - component: {fileID: 5580571529091124883}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: BlackKnight
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

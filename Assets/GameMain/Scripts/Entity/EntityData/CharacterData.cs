@@ -17,44 +17,11 @@ namespace StarForce
     [Serializable]
     public abstract class CharacterData : TargetableObjectData
     {
-        //public CharacterAnimationParameter chParams;
+        [SerializeField]
+        protected CharacterAnimationData animParams = new CharacterAnimationData();
 
-        public string run = "run";
-        public string idle = "idle";
-        public string walk = "walk";
-        public string attack01 = "attack01";
-        public string attack02 = "attack02";
-        public string attack03 = "attack03";
-        public string attack04 = "attack04";
-        //普攻三段
-        
-        //蓄力攻击中
-        public string attackCharging = "attackCharging";
-        //蓄力攻击释放
-        public string attackChargeDown = "attackChargeDown";
-        //蓄力攻击上
-        public string meleeAttackUpCharge = "meleeAttackUpCharge";
-        //空中攻击
-        public string attackAir = "attackAir";
-        //空中攻击下
-        public string attackAirDown = "attackAirDown";
-        //蓄力攻击下
-        public string meleeAttackDownCharge = "meleeAttackDownCharge";
-        //射击
-        public string shoot = "shoot";
-        //蓄力射击
-        public string shootCharge = "shootCharge";
-        //反击
-        public string counterStrike = "counterStrike";
-        //使用怒气
-        public string burst = "burst";
-
-        public string death = "death";
-        public string jump = "jump";
-        public string isGround = "isGround";
-        public string speed = "speed";
-        public string roll = "roll";
-        public string hurt = "hurt";
+        // 获取动画参数的属性
+        public CharacterAnimationData AnimParams => animParams;
 
         [SerializeField]
         private float m_AttackSpeedRate = 1;
@@ -314,126 +281,33 @@ namespace StarForce
             }
         }
 
-        //virtual public void Damage(float damageVal)
-        //{
-        //    //写所有受到伤害是共性的表现 HP减少！
-        //    //受击者 有防御能力
-        //    damageVal = damageVal - Defense;
+        // 添加事件
+        public event System.Action OnDeath;
 
-        //    //GameObject ob= GameObjectPool.Instance.CreateObject(damageValue, damageDisplayPre, this.transform.position, Quaternion.identity);
-        //    //ob.GetComponent<DamageDisplay>().damageValue = damageVal;
-        //    if (damageVal <= 0) return;
-        //    HP -= damageVal;
-
-
-        //    //受击后变颜色，暂时是红色，可根据伤害元素类型改变
-        //    FlashColor(FlashTime, Color.red);
-        //    if (HP <= 0) Death();
-        //    //子类可以再加上个性的表现
-        //}
-        //private Color originalColor;
-        //public SpriteRenderer spriteRenderer;
-        //public IEnumerator FlashColor(float time, Color color)
-        //{
+      
+        // private Color originalColor;
+        // public SpriteRenderer spriteRenderer;
+        // public IEnumerator FlashColor(float time, Color color)
+        // {
         //    spriteRenderer.color = color;
 
         //    yield return new WaitForSeconds(time);
             
         //    ResetColor();
 
-        //}
+        // }
 
-        ////恢复成原有颜色
-        //public void ResetColor()
-        //{
+        // //恢复成原有颜色
+        // public void ResetColor()
+        // {
         //    spriteRenderer.color = originalColor;
-        //}
+        // }
 
-       
-
-        #region
-        //public ThrusterData GetThrusterData()
-        //{
-        //    return m_ThrusterData;
-        //}
-
-        //public List<WeaponData> GetAllWeaponDatas()
-        //{
-        //    return m_WeaponDatas;
-        //}
-
-        //public void AttachWeaponData(WeaponData weaponData)
-        //{
-        //    if (weaponData == null)
-        //    {
-        //        return;
-        //    }
-
-        //    if (m_WeaponDatas.Contains(weaponData))
-        //    {
-        //        return;
-        //    }
-
-        //    m_WeaponDatas.Add(weaponData);
-        //}
-
-        //public void DetachWeaponData(WeaponData weaponData)
-        //{
-        //    if (weaponData == null)
-        //    {
-        //        return;
-        //    }
-
-        //    m_WeaponDatas.Remove(weaponData);
-        //}
-
-        //public List<ArmorData> GetAllArmorDatas()
-        //{
-        //    return m_ArmorDatas;
-        //}
-
-        //public void AttachArmorData(ArmorData armorData)
-        //{
-        //    if (armorData == null)
-        //    {
-        //        return;
-        //    }
-
-        //    if (m_ArmorDatas.Contains(armorData))
-        //    {
-        //        return;
-        //    }
-
-        //    m_ArmorDatas.Add(armorData);
-        //    RefreshData();
-        //}
-
-        //public void DetachArmorData(ArmorData armorData)
-        //{
-        //    if (armorData == null)
-        //    {
-        //        return;
-        //    }
-
-        //    m_ArmorDatas.Remove(armorData);
-        //    RefreshData();
-        //}
-
-        //private void RefreshData()
-        //{
-        //    m_MaxHP = 0;
-        //    m_Defense = 0;
-        //    for (int i = 0; i < m_ArmorDatas.Count; i++)
-        //    {
-        //        m_MaxHP += m_ArmorDatas[i].MaxHP;
-        //        m_Defense += m_ArmorDatas[i].Defense;
-        //    }
-
-        //    if (HP > m_MaxHP)
-        //    {
-        //        HP = m_MaxHP;
-        //    }
-        //}
-        #endregion
+       // 修改 Death 方法
+        virtual public void Death()
+        {
+            OnDeath?.Invoke();
+        }
+     
     }
 }

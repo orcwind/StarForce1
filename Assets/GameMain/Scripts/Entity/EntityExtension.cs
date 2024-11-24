@@ -9,6 +9,8 @@ using GameFramework.DataTable;
 using System;
 using UnityGameFramework.Runtime;
 using UnityEngine;
+using GameFramework;
+using GameFramework.Entity;
 
 namespace StarForce
 {
@@ -55,72 +57,59 @@ namespace StarForce
         {
             entityComponent.ShowEntity(typeof(Background), "Background", Constant.AssetPriority.BackgroundAsset, data);
         }
- public static void ShowAttack(this EntityComponent entityComponent, AttackData data)
+
+        public static void ShowAttack(this EntityComponent entityComponent, AttackData data)
+        {
+            if (data == null)
+            {
+                Log.Error("AttackData is null in ShowAttack");
+                return;
+            }
+
+            try 
+            {
+                // 获取实体配置
+                IDataTable<DREntity> dtEntity = GameEntry.DataTable.GetDataTable<DREntity>();
+                DREntity drEntity = dtEntity.GetDataRow(data.TypeId);
+                if (drEntity == null)
+                {
+                    Log.Warning("Can not load entity id '{0}' from data table.", data.TypeId.ToString());
+                    return;
+                }
+
+                // 使用完整的 ShowEntity 方法
+                entityComponent.ShowEntity(
+                    data.Id,                         // 实体ID
+                    typeof(Attack),                  // 实体类型
+                    AssetUtility.GetEntityAsset(drEntity.AssetName),  // 资源名称
+                    "Attack",                        // 实体组名称
+                    Constant.AssetPriority.AttackAsset,  // 优先级
+                    data                            // 用户数据
+                );
+
+                //Log.Info($"Showing Attack entity: Id={data.Id}, TypeId={data.TypeId}, AssetName={drEntity.AssetName}");
+            }
+            catch (Exception e)
+            {
+                Log.Error($"Error in ShowAttack: {e.Message}\nStackTrace: {e.StackTrace}");
+            }
+        }
+
+        public static void ShowGroundWeapon(this EntityComponent entityComponent, GroundWeaponData data)
+        {
+            entityComponent.ShowEntity(typeof(GroundWeapon), "GroundWeapon", Constant.AssetPriority.GroundWeaponAsset, data);
+        }
+
+        public static void ShowEnemy(this EntityComponent entityComponent, EnemyData data)
+        {
+            entityComponent.ShowEntity(typeof(Enemy), "Enemy", Constant.AssetPriority.EnemyAsset, data);
+        }
+
+public static void ShowDamageText(this EntityComponent entityComponent, DamageTextData data)
 {
-    if (data == null)
-    {
-        Log.Error("AttackData is null");
-        return;
-    }
-
-    // 使用已有的私有方法 ShowEntity，它会处理资源加载和实体创建
-    ShowEntity(entityComponent, typeof(Attack), "Attack", Constant.AssetPriority.AttackAsset, data);
-}
-        // public static void ShowAttack(this EntityComponent entityComponent, AttackData data)
-        // {
-        //     entityComponent.ShowEntity(typeof(Attack), "Attack", Constant.AssetPriority.AttackAsset, data);
-        // }
-
-        // public static void ShowWeapon(this EntityComponent entityComponent, WeaponData data)
-        // {
-        //     entityComponent.ShowEntity(typeof(Weapon), "Weapon", Constant.AssetPriority.WeaponAsset, data);
-        // }
-public static void ShowGroundWeapon(this EntityComponent entityComponent, GroundWeaponData data)
-{
-    entityComponent.ShowEntity(typeof(GroundWeapon), "GroundWeapon", Constant.AssetPriority.GroundWeaponAsset, data);
-}
-
-public static void ShowEnemy(this EntityComponent entityComponent, EnemyData data)
-{
-    entityComponent.ShowEntity(typeof(Enemy), "Enemy", Constant.AssetPriority.EnemyAsset, data);
-}
-        //public static void ShowMyAircraft(this EntityComponent entityComponent, MyAircraftData data)
-        //{
-        //    entityComponent.ShowEntity(typeof(MyAircraft), "Aircraft", Constant.AssetPriority.MyAircraftAsset, data);
-        //}
-
-        //public static void ShowAircraft(this EntityComponent entityComponent, AircraftData data)
-        //{
-        //    entityComponent.ShowEntity(typeof(Aircraft), "Aircraft", Constant.AssetPriority.AircraftAsset, data);
-        //}
-
-        //public static void ShowThruster(this EntityComponent entityComponent, ThrusterData data)
-        //{
-        //    entityComponent.ShowEntity(typeof(Thruster), "Thruster", Constant.AssetPriority.ThrusterAsset, data);
-        //}
-
-        //public static void ShowWeapon(this EntityComponent entityComponent, WeaponData data)
-        //{
-        //    entityComponent.ShowEntity(typeof(Weapon), "Weapon", Constant.AssetPriority.WeaponAsset, data);
-        //}
-
-        //public static void ShowArmor(this EntityComponent entityComponent, ArmorData data)
-        //{
-        //    entityComponent.ShowEntity(typeof(Armor), "Armor", Constant.AssetPriority.ArmorAsset, data);
-        //}
-
-        //public static void ShowBullet(this EntityComponent entityCompoennt, BulletData data)
-        //{
-        //    entityCompoennt.ShowEntity(typeof(Bullet), "Bullet", Constant.AssetPriority.BulletAsset, data);
-        //}
-
-        //public static void ShowAsteroid(this EntityComponent entityCompoennt, AsteroidData data)
-        //{
-        //    entityCompoennt.ShowEntity(typeof(Asteroid), "Asteroid", Constant.AssetPriority.AsteroiAsset, data);
-        //}
-
-
-
+            entityComponent.ShowEntity(typeof(DamageText), "DamageText", Constant.AssetPriority.DamageTextAsset, data);
+            Log.Info("Showing DamageText entity: Id={data.Id}, TypeId={data.TypeId}, AssetName={drEntity.AssetName}");
+        }
         private static void ShowEntity(this EntityComponent entityComponent, Type logicType, string entityGroup, int priority, EntityData data)
         {
             if (data == null)

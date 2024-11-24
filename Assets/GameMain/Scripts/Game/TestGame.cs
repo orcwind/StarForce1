@@ -27,8 +27,8 @@ namespace StarForce
             base.Initialize();
             
             // 生成武器
-            WeaponManager.Instance.SpawnWeaponOnGround(101010, new Vector3(-2f, 0f, 0f));
-            WeaponManager.Instance.SpawnWeaponOnGround(101020, new Vector3(2f, 0f, 0f));
+            WeaponManager.Instance.SpawnWeaponOnGround(10101, new Vector3(-2f, 0f, 0f));
+            WeaponManager.Instance.SpawnWeaponOnGround(10102, new Vector3(2f, 0f, 0f));
 
             // 使用EnemyManager生成敌人
             EnemyManager.Instance.SpawnEnemy(20001, new Vector3(-3f, 0f, 0f));

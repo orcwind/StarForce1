@@ -1,4 +1,4 @@
-# StarForce Game Project
+﻿# StarForce Game Project
 
 ## 目录
 1. [项目概述](#项目概述)
@@ -192,3 +192,5 @@ Assets/
 ## 联系方式
 - 项目维护者：[维护者姓名]
 - 邮箱：[联系邮箱]
+
+

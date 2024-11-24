@@ -164,7 +164,7 @@ namespace StarForce
             
             if (anim != null)
             {
-                isChargingRelease = anim.GetBool(m_characterData.attackChargeDown);
+                isChargingRelease = anim.GetBool(m_characterData.AnimParams.attackChargeDown);
             }
         }
                 
@@ -172,7 +172,7 @@ namespace StarForce
         {
             //空中或翻滚中或攻击中取消翻滚
             if (!isGround || isrolling || isAttack || isCharging || isChargingRelease) return;
-            anim.SetTrigger(m_characterData. roll);
+            anim.SetTrigger(m_characterData.AnimParams.roll);
             Vector3 target = new Vector3(transform.position.x + faceDirection * rollDistance, 
             transform.position.y);
             StartCoroutine(rollForward(target, faceDirection));
@@ -194,7 +194,7 @@ namespace StarForce
               
             }
             isrolling = false;
-            anim.SetBool(m_characterData. roll, false);
+            anim.SetBool(m_characterData.AnimParams.roll, false);
         }
 
         public void Move(Vector2 moveDir)
@@ -235,7 +235,7 @@ namespace StarForce
             if (anim != null)
             {
                 bool isMoving = moveDir.magnitude > 0.1f;
-                anim.SetBool(m_characterData.run, isMoving);
+                anim.SetBool(m_characterData.AnimParams.run, isMoving);
                // anim.SetFloat(m_characterData.speed, moveDir.magnitude);
             }
 
@@ -278,6 +278,11 @@ namespace StarForce
         internal void attack()
         {
             int m_WeaponId=m_Player.PlayerData.WeaponId;
+            int xx = (m_WeaponId / 100) % 100;  // 提取xx部分
+            int yy = m_WeaponId % 100;          // 提取yy部分
+            int m_attackId = 900000 + (xx * 1000) + yy * 10 + 1; // 默认第一段攻击
+
+          
            
             //攻击中取消攻击
             if (isAttack) return;
@@ -285,28 +290,28 @@ namespace StarForce
             
             if (!isGround)
             {
-                skillSystem.AttackUseSkill(m_WeaponId, false);
+                skillSystem.AttackUseSkill(m_attackId, false);
                 Debug.Log("use attack skill");
                 return;
             }
-            //翻滚后攻击暂定id为weaponid， 后期更改为翻滚攻击
+            //翻滚后攻击暂定id为attackId， 后期更改为翻滚攻击
             if (isrolling)
             {
-                skillSystem.AttackUseSkill(m_WeaponId, false); return;
+                skillSystem.AttackUseSkill(m_attackId, false); return;
             }
 
             float intervalTime = Time.time - lastPressTime;
             if (intervalTime < cancelAttackTime) return;
             bool isBatter = intervalTime < batterAttackTime;
-            skillSystem.AttackUseSkill(m_WeaponId, isBatter);    
-            Debug.Log("#####attackUseSkill is called +"+m_WeaponId);      
+            skillSystem.AttackUseSkill(m_attackId, isBatter);    
+     
             lastPressTime = Time.time;
         }
 
         //蓄力普攻，播放动画，设置蓄力状态
         internal void charging()
         {    
-            anim.SetBool(m_characterData. attackCharging, true);
+            anim.SetBool(m_characterData.AnimParams.attackCharging, true);
             isCharging = true;
             //GetComponent<Animation>()["attackCharging"].wrapMode = WrapMode.ClampForever;
         }
@@ -314,9 +319,14 @@ namespace StarForce
         //蓄力普攻释放，播放动画，设置蓄力状态结束
         internal void attackChargeRelease()
         {
-            anim.SetBool(m_characterData. attackCharging, false);
-            anim.SetBool(m_characterData. attackChargeDown, true);
+            anim.SetBool(m_characterData.AnimParams.attackCharging, false);
+            //anim.SetBool(m_characterData. attackChargeDown, true);
             isCharging = false;
+            int m_WeaponId=m_Player.PlayerData.WeaponId;
+            int xx = (m_WeaponId / 100) % 100;  // 提取xx部分
+            int yy = m_WeaponId % 100;          // 提取yy部分
+            int m_attackId = 900000 + (xx * 1000) + yy * 10 + 9; // 蓄力攻击编号
+            skillSystem.AttackUseSkill(m_attackId, false);
         }
 
         //shoot 主要创建投射物，同时设置投射物高度，投射物表现由投射物上挂的脚本确定。

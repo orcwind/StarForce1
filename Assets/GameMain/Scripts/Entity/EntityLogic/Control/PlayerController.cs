@@ -98,8 +98,9 @@ namespace StarForce
 		{
 			if (context.interaction is SlowTapInteraction)
 			{
-				m_Animator.SetBool(m_PlayerData.attackCharging, false);
+				m_Animator.SetBool(m_PlayerData.AnimParams.attackCharging, false);
 				m_CharacterMotor.isCharging = false;
+				m_CharacterMotor.attack();
 			}
 		}
 
@@ -111,19 +112,19 @@ namespace StarForce
 			isAttacking = IsAttacking();
 			m_CharacterMotor.Move(m_InputControl.Gameplay.Move.ReadValue<Vector2>());
 			m_CharacterMotor.Jump();           
-			m_Animator.SetBool(m_PlayerData.isGround, m_CharacterMotor.isGround);
+			m_Animator.SetBool(m_PlayerData.AnimParams.isGround, m_CharacterMotor.isGround);
 		}
 
 		private bool IsAttacking()
 		{
-			return m_Animator.GetBool(m_PlayerData.attack01) || 
-				   m_Animator.GetBool(m_PlayerData.attack02) || 
-				   m_Animator.GetBool(m_PlayerData.attack03);
+			return m_Animator.GetBool(m_PlayerData.AnimParams.attack01) || 
+				   m_Animator.GetBool(m_PlayerData.AnimParams.attack02) || 
+				   m_Animator.GetBool(m_PlayerData.AnimParams.attack03);
 		}
 
 		private void MoveCanceled(InputAction.CallbackContext context)
 		{
-			m_Animator.SetBool(m_PlayerData.run, false);
+			m_Animator.SetBool(m_PlayerData.AnimParams.run, false);
 		}
 
 		private void Jump(InputAction.CallbackContext context)

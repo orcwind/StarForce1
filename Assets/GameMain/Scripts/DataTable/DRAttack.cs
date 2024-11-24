@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2024-10-17 08:54:36.549
+// 生成时间：2024-11-22 14:10:54.779
 //------------------------------------------------------------
 
 using GameFramework;
@@ -19,7 +19,7 @@ using UnityGameFramework.Runtime;
 namespace StarForce
 {
     /// <summary>
-    /// 动作表。
+    /// attack.csv。
     /// </summary>
     public class DRAttack : DataRowBase
     {
@@ -252,6 +252,15 @@ namespace StarForce
             private set;
         }
 
+        /// <summary>
+        /// 获取影响效果。
+        /// </summary>
+        public string ImpactType
+        {
+            get;
+            private set;
+        }
+
         public override bool ParseDataRow(string dataRowString, object userData)
         {
             string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);
@@ -288,6 +297,7 @@ namespace StarForce
             SelectorType = int.Parse(columnStrings[index++]);
             SkillAttackType = int.Parse(columnStrings[index++]);
             AnimParaName = columnStrings[index++];
+            ImpactType = columnStrings[index++];
 
             GeneratePropertyArray();
             return true;
@@ -324,6 +334,7 @@ namespace StarForce
                     SelectorType = binaryReader.Read7BitEncodedInt32();
                     SkillAttackType = binaryReader.Read7BitEncodedInt32();
                     AnimParaName = binaryReader.ReadString();
+                    ImpactType = binaryReader.ReadString();
                 }
             }
 

@@ -1,9 +1,9 @@
 ﻿#,weapon.csv,,,,
 #,Id,,WeaponName,WeaponDescription,WeaponType
 #,int,,string,string,int
-#,武器编号,策划备注,武器名称,武器描述,武器类型(0:近战
-,101010,,BronzeSword,a  bronze sword,0
-,101020,,FireSpear,a afire spear with fire,0
-,101030,,ThunderAxe,very heavy axe,0
-,102010,,QiankunCircle,qiankun ,1
-,102020,,Bow,normal bow,1
+#,武器编号,策划备注,武器名称,武器描述,武器类型(1:近战 2远程，3其他）
+,10101,,BronzeSword,a  bronze sword,1
+,10102,,FireSpear,a afire spear with fire,1
+,10103,,ThunderAxe,very heavy axe,1
+,10201,,QiankunCircle,qiankun ,2
+,10202,,Bow,normal bow,2

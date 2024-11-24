@@ -18,13 +18,11 @@ namespace StarForce
 
         private void LoadWeaponData(int weaponId)
         {
-            // 这里修改，TypeId使用固定值100000（武器类型的EntityId）
-            //const int WEAPON_TYPE_ID = 100000;
             WeaponData = new WeaponData(
-                GameEntry.Entity.GenerateSerialId(), // entityId               
-                weaponId,                           // weaponId (具体武器的ID，如101010)
-                0,                                  // ownerId
-                CampType.Player                     // ownerCamp
+                GameEntry.Entity.GenerateSerialId(),
+                weaponId,
+                0,
+                CampType.Player
             );
             
             if (WeaponData.WeaponName == string.Empty)
@@ -37,12 +35,35 @@ namespace StarForce
         {
             m_AttackDataDict = new Dictionary<int, AttackData>();
             IDataTable<DRAttack> dtAttack = GameEntry.DataTable.GetDataTable<DRAttack>();
+            
+            // 获取武器类型和编号
+            int weaponType = (weaponId / 100) % 100;  // xx部分
+            int weaponNumber = weaponId % 100;        // yy部分
+            
+            // 构建基础攻击ID
+            int baseAttackId = 900000 + (weaponType * 100) + weaponNumber * 10;
+            
+            // 加载所有攻击数据
             var drAttacks = dtAttack.GetDataRows(a => a.WeaponId == weaponId);
             foreach (var drAttack in drAttacks)
             {
-                AttackData attackData = new AttackData(GameEntry.Entity.GenerateSerialId(), 
-                drAttack.Id);
+                // 生成攻击实体ID
+                int entityId = GameEntry.Entity.GenerateSerialId();
+                
+                // 根据攻击类型选择正确的预制体类型ID
+                int attackTypeId;
+                if (weaponType == 1)
+                    attackTypeId = 901000; // 近战攻击
+                else if (weaponType == 2)
+                    attackTypeId = 902000; // 远程攻击
+                else
+                    attackTypeId = 903000; // 特殊攻击
+                    
+                // 创建攻击数据
+                AttackData attackData = new AttackData(entityId, drAttack.Id);
                 m_AttackDataDict.Add(drAttack.AttackId, attackData);
+                
+              
             }
         }
 

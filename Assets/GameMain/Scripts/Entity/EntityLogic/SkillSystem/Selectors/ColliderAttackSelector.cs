@@ -8,35 +8,57 @@ using System;
 namespace StarForce.Skill
 {
     /// <summary>
-    /// 
+    /// ç¢°æ’ä½“æ”»å‡»é€‰æ‹©å™¨
     /// </summary>
     public class ColliderAttackSelector : IAttackSelector
     {
+        private const string DEAD_LAYER_NAME = "DeadEnemy";
+        
         /// <summary>
-        /// ¾ØĞÎÑ¡Çø
+        /// é€‰æ‹©ç›®æ ‡
         /// </summary>
-        /// <param name="¼¼ÄÜÊı¾İ"></param>
-        /// <param name="¼¼ÄÜ×é¼şµÄTransform"></param>
+        /// <param name="æ”»å‡»æ•°æ®"></param>
+        /// <param name="æŠ€èƒ½ä½ç½®"></param>
         /// <returns></returns>
 
-        public Transform[] SelectTarget(AttackData data, Transform skillTF)
+        public Transform[] SelectTarget(AttackData data, Transform attackTF)
         {
-            
-            //¸ù¾İ¼¼ÄÜÊı¾İÖĞµÄ±êÇ©£¬»ñÈ¡ËùÓĞÄ¿±ê
-            //string[] ---> Transform[]
-            List<Transform> targets = new List<Transform>();         
-           Transform tf= data.SkillOwner.transform.FindChildByName("AttackArea");           
-           targets = tf.GetComponentInChildren<AttackCollider>()?.targets;
-                           
-            if (targets.Count == 0) return null;
+            if (data.SkillOwner == null)
+            {
+                Debug.LogError("SkillOwner is null in ColliderAttackSelector");
+                return null;
+            }
+
+            // è·å– AttackCollider ç»„ä»¶
+            AttackCollider attackCollider = data.SkillOwner.GetComponentInChildren<AttackCollider>();
+            if (attackCollider == null)
+            {
+                Debug.LogError($"AttackCollider component not found on {data.SkillOwner.name}");
+                return null;
+            }
+
+            // è¿‡æ»¤æ‰æ­»äº¡å•ä½
+            List<Transform> validTargets = new List<Transform>();
+            foreach (Transform target in attackCollider.targets)
+            {
+                if (target != null && target.gameObject.layer != LayerMask.NameToLayer(DEAD_LAYER_NAME))
+                {
+                    validTargets.Add(target);
+                }
+            }
+
+            // æ ¹æ®æŠ€èƒ½æ”»å‡»ç±»å‹è¿”å›ç›®æ ‡
+            if (data.SkillAttackType == SkillAttackType.Group)
+            {
+                return validTargets.ToArray();
+            }
             else
             {
-                if (data.SkillAttackType == SkillAttackType.Group)
-                    return  targets.ToArray();
-                Transform min = targets.ToArray().GetMin(s => Vector3.Distance(s.position, skillTF.position));
+                // å•ä½“æ”»å‡»æ—¶è¿”å›æœ€è¿‘çš„ç›®æ ‡
+                if (validTargets.Count == 0) return null;
+                Transform min = validTargets.ToArray().GetMin(s => Vector3.Distance(s.position, attackTF.position));
                 return new Transform[] { min };
             }
-                       
         }
       
         

@@ -8,6 +8,7 @@
 using GameFramework.DataTable;
 using System;
 using UnityEngine;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
@@ -51,10 +52,10 @@ namespace StarForce
         [SerializeField]
         private string[] m_AttackTargetTags;
         [SerializeField]
-        private string[] m_AttackTargetLayers;
+        private string[] m_AttackTargetLayers = new string[] { "BodyCollider" };
 
         [SerializeField]
-        private string[] m_ImpactType;
+        private string[] m_ImpactType = new string[] { "Damage" };
         [SerializeField]
         private string m_AnimationName;
         [SerializeField]
@@ -86,46 +87,92 @@ namespace StarForce
              [SerializeField]
         private int m_WeaponId;
 
-        public AttackData(int entityId, int typeId) : 
-            base(entityId, typeId)
-        {
-            IDataTable<DRAttack> dtAttacks = GameEntry.DataTable.GetDataTable<DRAttack>();
-            DRAttack drAttack = dtAttacks.GetDataRow(typeId);
-            if (drAttack != null)
-            {              
-                m_BackgroundId = drAttack.BackgroundId;
-                m_AssetName = drAttack.AssetName;
-                m_NextBatterID = drAttack.NextBatterID;
-                m_AtkDamage = drAttack.AtkDamage;
-                m_AttackAngle = drAttack.AttackAngle;
-                m_CriticalDamage = drAttack.CriticalDamage;
-                m_CriticalRate = drAttack.CriticalRate;
-                m_KnockBackDistance = drAttack.KnockBackDistance;
-                m_KnockBackSpeed = drAttack.KnockBackSpeed;
-                m_SelectorType = drAttack.SelectorType;
-                m_SkillAttackType =drAttack.SkillAttackType;
-                m_DurationTime = drAttack.DurationTime;
-                m_CoolRemain = drAttack.CoolRemain;
-                m_CoolTime = drAttack.CoolTime;
-                m_AnimationName = drAttack.AnimationName;
-                m_AnimParaName = drAttack.AnimParaName;
-                m_AttackWidth = drAttack.AttackWidth;
-               m_AttackDistance = drAttack.AttackDistance;
-                m_WeaponName = drAttack.WeaponName;
-                m_WeaponDescription = drAttack.WeaponDescription;
-                m_WeaponType = drAttack.WeaponType;                
-                m_AttackId = drAttack.AttackId;
-                m_AtkInterval = drAttack.AtkInterval;
-                m_WeaponId = drAttack.WeaponId;
+        [SerializeField]
+        private int m_AttackSequence;
 
+        public AttackData(int entityId, int typeId) : base(entityId, typeId)
+        {
+            try 
+            {
+                IDataTable<DRAttack> dtAttacks = GameEntry.DataTable.GetDataTable<DRAttack>();
+                DRAttack drAttack = dtAttacks.GetDataRow(typeId);
+                if (drAttack != null)
+                {
+                    // 不再重新计算TypeId，保持与数据表中的ID一致
+                    TypeId = drAttack.Id;  // 这里应该是9xxyyz格式
+                    m_WeaponId = drAttack.WeaponId; // 这里是1xxyy格式
+                    
+                    // 设置其他数据
+                    m_BackgroundId = drAttack.BackgroundId;
+                    m_AssetName = drAttack.AssetName;
+                    m_NextBatterID = drAttack.NextBatterID;
+                    m_AtkDamage = drAttack.AtkDamage;
+                    m_AttackAngle = drAttack.AttackAngle;
+                    m_CriticalDamage = drAttack.CriticalDamage;
+                    m_CriticalRate = drAttack.CriticalRate;
+                    m_KnockBackDistance = drAttack.KnockBackDistance;
+                    m_KnockBackSpeed = drAttack.KnockBackSpeed;
+                    m_SelectorType = drAttack.SelectorType;
+                    m_SkillAttackType =drAttack.SkillAttackType;
+                    m_DurationTime = drAttack.DurationTime;
+                    m_CoolRemain = drAttack.CoolRemain;
+                    m_CoolTime = drAttack.CoolTime;
+                    m_AnimationName = drAttack.AnimationName;
+                    m_AnimParaName = drAttack.AnimParaName;
+                    m_AttackWidth = drAttack.AttackWidth;
+                   m_AttackDistance = drAttack.AttackDistance;
+                    m_WeaponName = drAttack.WeaponName;
+                    m_WeaponDescription = drAttack.WeaponDescription;
+                    m_WeaponType = drAttack.WeaponType;                
+                    m_AttackId = drAttack.AttackId;
+                    m_AtkInterval = drAttack.AtkInterval;
+                    m_AttackSequence = drAttack.AttackId % 10;
+                    
+                    // 处理 ImpactType
+                    if (!string.IsNullOrEmpty(drAttack.ImpactType))
+                    {
+                        string rawImpactType = drAttack.ImpactType;
+                       
+                        
+                        m_ImpactType = rawImpactType.Split('_');
+                       
+                    }
+                    else
+                    {
+                        m_ImpactType = new string[] { "Damage" };
+                       
+                    }
+
+                   
+                }
+                else
+                {
+                    Log.Error($"Failed to find attack data for typeId: {typeId}");
+                }
             }
-            m_ImpactType = new string[0];
+            catch (Exception e)
+            {
+                Log.Error($"Error in AttackData constructor: {e.Message}\nStackTrace: {e.StackTrace}");
+                m_ImpactType = new string[] { "Damage" }; // 确保有默认值
+            }
         }
 
         public string[] ImpactType
         {
             get { return m_ImpactType; }
-            set { m_ImpactType = value; }
+            set 
+            { 
+                if (value != null && !string.IsNullOrEmpty(value[0]))
+                {
+                    m_ImpactType = value;
+               ;
+                }
+                else
+                {
+                    m_ImpactType = new string[] { "Damage" };
+                    Log.Warning("Using default impact type: Damage");
+                }
+            }
         }
 
 
@@ -160,11 +207,8 @@ namespace StarForce
         /// <summary>
         /// 被攻击目标。
         /// </summary>
-        public Transform[] AttackTargets
-        {
-            get { return m_AttackTargets; }
-            set { m_AttackTargets = value; }
-        }
+        public Transform[] AttackTargets;
+       
 
         /// <summary>
         /// 技能prefab。
@@ -393,6 +437,13 @@ namespace StarForce
             get { return m_WeaponId; }
         }
 
+        /// <summary>
+        /// 攻击序列。
+        /// </summary>
+        public int AttackSequence
+        {
+            get { return m_AttackSequence; }
+        }
     }
 
 

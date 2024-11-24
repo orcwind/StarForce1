@@ -36,5 +36,11 @@ namespace StarForce
             }
         }
 
+        override public void Death()
+        {
+            base.Death();
+            Debug.Log("player is dead");
+        }   
+
     }
 }

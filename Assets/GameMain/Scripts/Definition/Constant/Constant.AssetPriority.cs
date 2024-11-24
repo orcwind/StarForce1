@@ -37,6 +37,8 @@ namespace StarForce
 
             public const int EnemyAsset = 80;
 
+            public const int DamageTextAsset = 80;
+
    
             //public const int MyAircraftAsset = 90;
             //public const int AircraftAsset = 80;

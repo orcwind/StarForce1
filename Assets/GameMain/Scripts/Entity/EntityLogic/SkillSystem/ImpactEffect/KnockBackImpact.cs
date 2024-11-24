@@ -4,6 +4,7 @@ using System.Linq;
 
 //using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityGameFramework.Runtime;
 
 
 namespace StarForce.Skill
@@ -18,17 +19,27 @@ namespace StarForce.Skill
         public Vector2 direction;
         public void Execute(SkillDeployer deployer)
         {
-
+          
             AttackData data = deployer.AttackData;
 
             float kbdistance = data.KnockBackDistance;
-            if (data.AttackTargetTags == null) return;
+            if (data.AttackTargets == null) 
+            {
+             
+                return;
+            }
+         
             for (int i = 0; i < data.AttackTargets.Length; i++)
             {
                 direction = data.SkillOwner.transform.rotation.y == 0 ? Vector2.right : Vector2.left;
                
                 Rigidbody2D rb = data.AttackTargets[i].GetComponent<Rigidbody2D>();
-
+                if (rb == null)
+                {
+                    Log.Error("No Rigidbody2D component found on the target");
+                    continue;
+                }
+        
                 Vector3 target = new Vector3(rb.transform.position.x + direction.x * data.KnockBackDistance, rb.transform.position.y);
                 MonoBehaviourHelper.StartCoroutine(KnockbackMove(data, target, rb.transform));
                
@@ -38,6 +49,7 @@ namespace StarForce.Skill
 
         public IEnumerator KnockbackMove(AttackData data, Vector3 target, Transform transform)
         {
+         
             while (Vector2.Distance(transform.position, target) >= 0.1f)
             {  transform.GetComponent<Rigidbody2D>().velocity = direction * data.KnockBackSpeed;
                 

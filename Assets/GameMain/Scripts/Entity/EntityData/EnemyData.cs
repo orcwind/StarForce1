@@ -12,19 +12,32 @@ namespace StarForce
     /// <summary>
     /// 小怪状态
     /// </summary>
+    [System.Serializable]
     public class EnemyData : CharacterData
     {
-        /// <summary>
-        /// 贡献经验值
-        /// </summary>
-         public int GiveExp { get; private set; }
+        [SerializeField]
+        private int m_GiveExp = 100;
+
+        public int GiveExp
+        {
+            get { return m_GiveExp; }
+            private set { m_GiveExp = value; }
+        }
 
         public EnemyData(int entityId, int typeId) : base(entityId, typeId, CampType.Enemy)
         {
 
-            GiveExp = 100;
         }
 
+
+        override public void Death()
+        {  
+            base.Death();
+            Debug.Log("enemy is dead");
+            //TODO 死亡表现
+        }
+
+        
 
     }
 }

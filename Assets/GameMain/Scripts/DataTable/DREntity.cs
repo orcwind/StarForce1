@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2024-10-17 08:54:36.529
+// 生成时间：2024-11-22 14:10:54.767
 //------------------------------------------------------------
 
 using GameFramework;
@@ -19,7 +19,7 @@ using UnityGameFramework.Runtime;
 namespace StarForce
 {
     /// <summary>
-    /// 实体配置表。
+    /// Entity.csv。
     /// </summary>
     public class DREntity : DataRowBase
     {
